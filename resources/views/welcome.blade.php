@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    PortFolio2
+                    PortFolio
                 </div>
 
                 <div class="links">
