@@ -8,16 +8,16 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-light" href="#">ピックアアップ</a>
+                    <a class="nav-link text-dark" href="#">ピックアアップ</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light" href="#">ランキング</a>
+                    <a class="nav-link text-dark" href="#">ランキング</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light" href="#">みんなの動画</a>
+                    <a class="nav-link text-dark" href="#">みんなの動画</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light" href="#">ヘルプ</a>
+                    <a class="nav-link text-dark" href="#">ヘルプ</a>
                 </li>
             </ul>
         </div>
