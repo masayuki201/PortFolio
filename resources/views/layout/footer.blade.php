@@ -4,7 +4,7 @@
         <a class="navbar-brand text-dark" href="/"><h6>Children's<br>Videos</h6></a>
         <a class="navbar-brand text-dark" href="/"><h3>ちるび</h3></a>
 
-        {{-- 1段目右寄せメニュー ログインしていない場合 --}}
+        {{-- 右寄せメニュー --}}
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
@@ -21,7 +21,5 @@
                 </li>
             </ul>
         </div>
-
-
-
+    </nav>
 </footer>
