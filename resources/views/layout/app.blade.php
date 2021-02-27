@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    @include('header')
+    @include('layout.header')
+    {{--
     <div class="container">
-        @include('error_messages')
+        @include('layout.error_messages')
         @yield('content')
     </div>
-    @include('footer')
+    @include('layout.footer')
+     --}}
 </body>
 
 </html>
