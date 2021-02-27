@@ -19,8 +19,8 @@
         @include('layout.error_messages')
         @yield('content')
     </div>
+    --}}
     @include('layout.footer')
-     --}}
 </body>
 
 </html>
