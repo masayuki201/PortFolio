@@ -65,6 +65,12 @@
                     <a class="nav-link text-dark" href="#"><h5>ピックアップ</h5></a>
                 </div>
             </div>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    <a href="#">もっとみる</a>
+                </div>
+            </div>
+
         </nav>
 
 
