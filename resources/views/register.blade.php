@@ -35,7 +35,6 @@
                     {!! link_to_route('login', 'ログインはこちらから') !!}
                 </div>
             {!! Form::close() !!}
-
         </div>
     </div>
 
