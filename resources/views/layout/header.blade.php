@@ -7,13 +7,12 @@
         {{-- 1段目右寄せメニュー ログインしていない場合 --}}
         @guest
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
                     {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-warning col-auto']) !!}
-
-                    <a class="btn btn-primary col-auto" href="#">ログイン</a>
-                </li>
-            </ul>
+                    {!! link_to_route('login', 'ログイン', [], ['class' => 'btn btn-primary col-auto']) !!}
+                </div>
+            </div>
         </div>
         @endguest
 
