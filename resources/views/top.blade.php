@@ -42,14 +42,14 @@
                 <div class="col-xs-12 col-md-6 text-center my-5">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="btn btn-danger col-auto" href="#">新規登録</a>
+                            <a class="btn btn-warning btn-lg col-auto" href="#">新規登録</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-6 text-center my-5">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="btn btn-primary col-auto" href="#">ログイン</a>
+                            <a class="btn btn-primary btn-lg col-auto" href="#">ログイン</a>
                         </li>
                     </ul>
                 </div>

@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-danger col-auto" href="#">新規登録</a>
+                    <a class="btn btn-warning col-auto" href="#">新規登録</a>
                     <a class="btn btn-primary col-auto" href="#">ログイン</a>
                 </li>
             </ul>
