@@ -36,7 +36,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="col-xs-12 col-md-6 text-center my-5">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -46,25 +45,17 @@
         </div>
     </div>
     @endguest
+</div>
 
+{{-- ログインした場合は　topに来れないようにする--}}
 
-    {{-- ログインしている場合 --}}
-    @auth
-    <div class="row">
-        <div class="col-xs-12 col-md-6 text-center mt-5">
-            <h5>まだアカウントを<br>お持ちでない方はこちら</h5>
-            <div class="col-xs-12 col-md-12 text-center mt-4">
-                <button type="button" class="btn btn-primary btn-md">新規登録</button>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6 text-center mt-5">
-            <h5>すでにアカウントを<br>お持ちの方はこちら</h5>
-            <div class="col-xs-12 col-md-12 text-center mt-4">
-                <button type="button" class="btn btn-primary btn-md">ログイン</button>
-            </div>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(222, 238, 255)">
+    <div class="collapse navbar-collapse">
+        <div class="navbar-nav nav-item mx-2">
+            <a class="nav-link text-dark" href="#"><h5>ピックアップ</h5></a>
         </div>
     </div>
-    @endauth
+</nav>
 
-</div>
+
 @endsection
