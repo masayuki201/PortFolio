@@ -6,8 +6,8 @@
 
 @section('content')
 <div class="jumbotron">
-
-    写真を入れる
+　　{{-- 写真を入れる--}}
+    写真を入れる写真を入れる写真を入れる写真を入れる写真を入れる
 
     <div class="container">
         <h2 class="text-left text-light">さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h2>
@@ -70,8 +70,24 @@
                     <a href="#">もっとみる</a>
                 </div>
             </div>
-
         </nav>
+        {{-- みんなの動画の一部を表示させる--}}
+        みんなの動画の一部を表示させるみんなの動画の一部を表示させるみんなの動画の一部を表示させるみんなの動画の一部を表示させるみんなの動画の一部を表示させるみんなの動画の一部を表示させる
+
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(222, 238, 255)">
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav nav-item mx-2">
+                    <a class="nav-link text-dark" href="#"><h5>ランキング</h5></a>
+                </div>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    <a href="#">もっとみる</a>
+                </div>
+            </div>
+        </nav>
+        {{-- ランキングの一部を表示させる--}}
+        ランキングの一部を表示させるランキングの一部を表示させるランキングの一部を表示させるランキングの一部を表示させるランキングの一部を表示させるランキングの一部を表示させるランキングの一部を表示させる
 
 
 @endsection
