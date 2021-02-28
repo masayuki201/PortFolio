@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('nickname',16)->comment('ニックネーム');
             $table->string('email', 128)->comment('メールアドレス')->unique()->safeEmail;
             $table->string('password', 64)->comment('パスワード');
-            $table->char('delete_flag', 1)->delete(0)->comment('deleteフラグ');
+            $table->char('delete_flag', 1)->default(0)->comment('deleteフラグ');
             $table->rememberToken();
             $table->timestamps();
 

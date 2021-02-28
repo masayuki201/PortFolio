@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title','ちるび/ログインページ')
+
 @section('content')
 <div class="container">
     <div class="text-center mt-3">
