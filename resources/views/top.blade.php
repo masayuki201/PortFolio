@@ -2,7 +2,7 @@
 
 @extends('layout.app')
 
-@section('title','オーガニック 珈琲屋さん(仮)')
+@section('title','ちるび/topページ')
 
 @section('content')
 <div class="container">
