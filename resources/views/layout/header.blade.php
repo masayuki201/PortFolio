@@ -9,7 +9,8 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-warning col-auto" href="#">新規登録</a>
+                    {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-warning col-auto']) !!}
+
                     <a class="btn btn-primary col-auto" href="#">ログイン</a>
                 </li>
             </ul>
