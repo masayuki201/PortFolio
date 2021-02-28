@@ -20,8 +20,8 @@ Route::get('signup', 'RegisterController@showRegistrationForm')->name('signup');
 Route::post('signup', 'RegisterController@register')->name('signup.post');
 
 //ログイン
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@login')->name('login.post');
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/login', 'LoginController@showLoginForm')->name('login');
+Route::post('/login', 'LoginController@login')->name('login.post');
+Route::get('/logout', 'LoginController@logout')->name('logout');
 
 
