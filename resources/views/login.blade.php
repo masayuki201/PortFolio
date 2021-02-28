@@ -27,9 +27,9 @@
         </div>
     </div>
     <div class="text-center col-sm-12">
-        {!! Form::submit('ログイン', ['class' => 'btn btn-primary mt-3']) !!}
+        {!! Form::submit('ログイン', ['class' => 'btn btn-primary my-5']) !!}
     </div>
-    <div class="text-center col-sm-12 mt-3">
+    <div class="text-center col-sm-12 my-3">
         {!! link_to_route('signup', 'まだ登録がお済みでないかたはこちら') !!}
     </div>
     {!! Form::close() !!}

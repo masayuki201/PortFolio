@@ -38,18 +38,18 @@
     @guest
     <div class="row">
         <div class="col-xs-12 col-md-6 text-center my-5">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="btn btn-warning btn-lg col-auto" href="#">新規登録</a>
-                </li>
-            </ul>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-warning btn-lg col-auto']) !!}
+                </div>
+            </div>
         </div>
         <div class="col-xs-12 col-md-6 text-center my-5">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="btn btn-primary btn-lg col-auto" href="#">ログイン</a>
-                </li>
-            </ul>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    {!! link_to_route('login', 'ログイン', [], ['class' => 'btn btn-primary btn-lg col-auto']) !!}
+                </div>
+            </div>
         </div>
     </div>
     @endguest

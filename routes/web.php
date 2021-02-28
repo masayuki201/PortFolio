@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('top');
 });
+
+//新規登録
+Route::get('signup', 'RegisterController@showRegistrationForm')->name('signup');
+Route::post('signup', 'RegisterController@register')->name('signup.post');
+
+//ログイン
+Route::get('/login', 'LoginController@showLoginForm')->name('login');
+Route::post('/login', 'LoginController@login')->name('login.post');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
+
