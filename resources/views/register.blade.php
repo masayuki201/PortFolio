@@ -26,11 +26,14 @@
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password_confirmation', 'パスワード確認') !!}
+                    {!! Form::label('password_confirmation', 'パスワード（確認用）') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('新規登録', ['class' => 'btn btn-primary mt-2']) !!}
+                {!! Form::submit('新規登録', ['class' => 'btn btn-warning btn-lg col-auto']) !!}
+                <div class="text-center col-sm-12 mt-3">
+                    {!! link_to_route('login', 'ログインはこちらから') !!}
+                </div>
             {!! Form::close() !!}
 
         </div>
