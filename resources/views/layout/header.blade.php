@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-danger col-auto" href="#">新規登録</a>
+                    <a class="btn btn-warning col-auto" href="#">新規登録</a>
                     <a class="btn btn-primary col-auto" href="#">ログイン</a>
                 </li>
             </ul>
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
-                <a class="nav-link text-light" href="#">ピックアアップ</a>
+                <a class="nav-link text-light" href="#">ピックアップ</a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="#">ランキング</a>
