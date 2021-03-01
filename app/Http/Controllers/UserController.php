@@ -15,12 +15,13 @@ class UserController extends Controller
         return view('top');
     }
 
-    //ユーザ情報照会
+    //マイページ
     public function show($id)
     {
         if($id == Auth::id()){
             return view('detail',[ 'id' => $id ]);
         }
+        //フラシュメッセージをみんなの動画ページへ表示させる
        // return redirect('/   ')->with('flash_message', '不適切なURLです。');
 
     }
