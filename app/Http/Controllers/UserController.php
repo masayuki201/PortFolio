@@ -30,7 +30,7 @@ class UserController extends Controller
         public function edit($id)
         {
             if($id == Auth::id()){
-                return view('user.edit',[ 'id' => $id ]);
+                return view('edit',[ 'id' => $id ]);
             }
             //フラシュメッセージをみんなの動画ページへ表示させる
             //return redirect('/    ')->with('flash_message', '不適切なURLです。');
