@@ -30,6 +30,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/user/{id}', 'Auth\UserController@show')->name('user.show');
     //ユーザ情報修正
     Route::get('/user/{id}/edit', 'Auth\UserController@edit')->name('user.edit');
+    //ユーザ情報更新
+    Route::post('/user/{id}', 'Auth\UserController@update')->name('user.update');
+    //ユーザ情報削除
+    Route::delete('/user/{id}/delete', 'Auth\UserController@destroy')->name('user.destroy');
 });
-
 
