@@ -4,16 +4,16 @@
 
 @section('content')
 <div class="container mt-5">
-    <h3 class="text-center py-5">マイページ</h3>
-    <div class="row justify-content-around mb-5 h4">
+    <h4 class="text-center py-5">マイページ</h4>
+    <div class="row mb-5">
         <div class="col-sm-5 col-5 text-right">ユーザーID</div>
         <div class="col-sm-5 col-5 ml-auto ">{{Auth::user()->id}}</div>
     </div>
-    <div class="row mb-5 h4">
+    <div class="row mb-5">
         <div class="col-sm-5 col-5 text-right">ニックネーム</div>
         <div class="col-sm-5 col-5 ml-auto">{{Auth::user()->nickname}}</div>
     </div>
-    <div class="row mb-5 h4">
+    <div class="row mb-5">
         <div class="col-sm-5 col-5 text-right">メールアドレス</div>
         <div class="col-sm-5 col-5 ml-auto">{{Auth::user()->email}}</div>
     </div>
