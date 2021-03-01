@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="text-center mt-3">
-        <h3>ログイン画面</h3>
+        <h4>ログイン</h4>
     </div>
     {!! Form::open(['route' => 'login.post']) !!}
     <div class="row justify-content-center">
