@@ -24,4 +24,12 @@ Route::get('/login', 'LoginController@showLoginForm')->name('login');
 Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
+//ログイン中
+Route::group(['middleware' => 'auth'], function () {
+    //ユーザ情報表示
+    Route::get('/user/{id}', 'Auth\UserController@show')->name('user.show');
+    //ユーザ情報修正
+    Route::get('/user/{id}/edit', 'Auth\UserController@edit')->name('user.edit');
+});
+
 
