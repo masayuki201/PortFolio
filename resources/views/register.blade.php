@@ -8,7 +8,7 @@
         <h4 class="login_title text-left d-inline-block mt-5">新規登録</h4>
     </div>
 
-    <div class="row mt-5 mb-5">
+    <div class="row my-5">
         <div class="col-sm-6 offset-sm-3">
 
             {!! Form::open(['route' => 'signup.post']) !!}
@@ -31,6 +31,7 @@
                     {!! Form::label('password_confirmation', 'パスワード（確認用）') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
+
                 <div class="text-center col-sm-12 my-5">
                     {!! Form::submit('新規登録', ['class' => 'btn btn-warning btn-lg col-auto']) !!}
                 </div>
