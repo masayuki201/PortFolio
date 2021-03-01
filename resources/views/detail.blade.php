@@ -18,7 +18,7 @@
         <div class="col-sm-5 col-5 ml-auto">{{Auth::user()->email}}</div>
     </div>
     <div class="text-center col-auto px-3 my-3">
-        <a href="/user/{{Auth::id()}}/edit" class="btn btn-primary col-auto">修正/退会する</a>
+        <a href="/user/{{Auth::id()}}/edit" class="btn btn-primary col-auto">修正/退会</a>
     </div>
 </div>
 @endsection
