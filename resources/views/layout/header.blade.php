@@ -50,7 +50,7 @@
                 <a class="nav-link text-light" href="#">動画登録</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#">マイページ</a>
+                <a class="nav-link text-light" href="user/{{Auth::id()}}">マイページ</a>
             </li>
             <div class="nav-item">
                 {!! link_to_route('logout', 'ログアウト', [], ['class' => 'nav-link text-light']) !!}

@@ -24,4 +24,15 @@ Route::get('/login', 'LoginController@showLoginForm')->name('login');
 Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
+//ログイン中
+Route::group(['middleware' => 'auth'], function () {
+    //マイページ
+    Route::get('/user/{id}', 'UserController@show')->name('user.show');
+    //登録情報修正
+  //Route::get('/user/{id}/edit', 'UserController@edit')->name('user.edit');
+    //登録情報更新
+  //Route::post('/user/{id}', 'UserController@update')->name('user.update');
+    //登録情報削除
+   //Route::delete('/user/{id}/delete', 'UserController@destroy')->name('user.destroy');
+});
 

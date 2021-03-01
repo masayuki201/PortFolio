@@ -13,7 +13,7 @@ class RegisterController extends Controller
 {
     use RegistersUsers;
 
-    protected $redirectTo = '/top';
+    protected $redirectTo = '/';
 
     public function __construct()
     {
