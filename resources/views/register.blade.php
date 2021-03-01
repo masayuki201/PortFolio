@@ -5,28 +5,26 @@
 @section('content')
 
     <div class="text-center">
-        <h3 class="login_title text-left d-inline-block mt-5">新規登録</h3>
+        <div class="login_title text-left d-inline-block mt-5">
+            <h4>新規登録</h4>
+        </div>
     </div>
 
-    <div class="row mt-5 mb-5">
+    <div class="row my-5">
         <div class="col-sm-6 offset-sm-3">
-
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
                     {!! Form::label('nickname', 'ニックネーム') !!}
                     {!! Form::text('nickname', old('nickname'), ['class' => 'form-control']) !!}
                 </div>
-
                 <div class="form-group">
                     {!! Form::label('email', 'メールアドレス') !!}
                     {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                 </div>
-
                 <div class="form-group">
                     {!! Form::label('password', 'パスワード') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
-
                 <div class="form-group">
                     {!! Form::label('password_confirmation', 'パスワード（確認用）') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
