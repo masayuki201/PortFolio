@@ -5,7 +5,9 @@
 @section('content')
 
     <div class="text-center">
-        <h4 class="login_title text-left d-inline-block mt-5">新規登録</h4>
+        <div class="login_title text-left d-inline-block mt-5">
+            <h4>新規登録</h4>
+        </div>
     </div>
 
     <div class="row my-5">

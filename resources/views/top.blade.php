@@ -10,7 +10,9 @@
     写真を入れる写真を入れる写真を入れる写真を入れる写真を入れる
 
     <div class="container">
-        <h2 class="text-left text-light">さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h2>
+        <div class="text-left text-light">
+            <h2>さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h2>
+        </div>
     </div>
 </div>
 

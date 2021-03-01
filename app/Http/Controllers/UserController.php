@@ -58,8 +58,6 @@ class UserController extends Controller
         public function destroy()
         {
             Auth::user()->delete();
-            return redirect('/top');
+            return redirect('/');
         }
-
-
 }

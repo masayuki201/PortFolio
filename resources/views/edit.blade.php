@@ -4,7 +4,9 @@
 
 @section('content')
 <div class="container">
-	<h4 class="text-center py-5">登録情報修正</h4>
+	<div class="text-center my-5">
+        <h4>登録情報修正</h4>
+    </div>
     <form action="{{ route('user.update', [Auth::user()->id]) }}" method="post">
         @csrf
         <input type="hidden" name="id" value="{{Auth::user()->id}}">
