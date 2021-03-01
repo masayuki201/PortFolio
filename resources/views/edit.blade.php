@@ -4,16 +4,16 @@
 
 @section('content')
 <div class="container">
-	<h3 class="text-center py-5">登録情報修正</h3>
+	<h4 class="text-center py-5">登録情報修正</h4>
     <form action="{{ route('user.update', [Auth::user()->id]) }}" method="post">
         @csrf
         <input type="hidden" name="id" value="{{Auth::user()->id}}">
         <div class="form-group row">
-            <label class="col-sm-4 col-form-label text-sm-center">ニックネーム</label>
-            <input type="text" name="nickname" value="{{ Auth::user()->nickname }}" class="col-sm-3 col-8">
+            <label class="col-sm-5 col-form-label text-sm-right">ニックネーム</label>
+            <input type="text" name="nickname" value="{{ Auth::user()->nickname }}" class="col-sm-3 col-5">
         </div>
         <div class="form-group row">
-            <label class="col-sm-4 col-form-label text-sm-center">メールアドレス</label>
+            <label class="col-sm-5 col-form-label text-sm-right">メールアドレス</label>
             <input type="text" name="email" value="{{ Auth::user()->email }}" class="col-sm-3 col-8">
         </div>
         <div class="d-flex justify-content-around py-5 col-sm-8 col-auto container">
