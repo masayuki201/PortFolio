@@ -14,8 +14,18 @@ class CreateVideosTable extends Migration
     public function up()
     {
         Schema::create('videos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id')->comment('動画ID');
+            $table->string('user_id',16)->unsigned()->index()->comment('ユーザID');
+            $table->string('url')->comment('URL');
+            $table->string('target_id')->nullable()->comment('対象ID');
             $table->timestamps();
+
+            //動画IDの外部キー制約
+            $table->foreign('users')
+            ->references('id')
+            ->on('videos')
+            ->onDelete('cascade');
+
         });
     }
 
