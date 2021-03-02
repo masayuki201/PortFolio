@@ -22,7 +22,12 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            //外部キーは、未作成
+            //動画IDの外部キー制約
+            $table->foreign('videos')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
+
 
         });
     }
