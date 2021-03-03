@@ -18,14 +18,14 @@ class CreateVideosTable extends Migration
             $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
             $table->string('url')->comment('URL');
             $table->integer('target_id')->nullable()->comment('対象ID');
-            $table->timestamps();
+            $table->timestamp('regist_data')->comment('登録日');
 
-            //動画IDの外部キー制約
+            //ユーザIDの外部キー制約
             $table->foreign('user_id')
             ->references('id')
             ->on('users')
             ->onDelete('cascade');
-            //動画IDの外部キー制約
+            //対象Dの外部キー制約
             //$table->foreign('users')
             //->references('id')
             //->on('videos')
