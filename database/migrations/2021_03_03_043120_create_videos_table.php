@@ -18,7 +18,7 @@ class CreateVideosTable extends Migration
             $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
             $table->string('url')->comment('URL');
             $table->integer('target_id')->nullable()->comment('対象ID');
-            $table->timestamp('regist_data')->comment('登録日');
+            $table->timestamp('regist_date')->comment('登録日');
 
             //ユーザIDの外部キー制約
             $table->foreign('user_id')
