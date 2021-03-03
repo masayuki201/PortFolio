@@ -15,16 +15,21 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('id')->comment('動画ID');
-            $table->string('user_id',16)->unsigned()->index()->comment('ユーザID');
+            $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
             $table->string('url')->comment('URL');
-            $table->string('target_id')->nullable()->comment('対象ID');
+            $table->integer('target_id')->nullable()->comment('対象ID');
             $table->timestamps();
 
             //動画IDの外部キー制約
-            $table->foreign('users')
+            $table->foreign('user_id')
             ->references('id')
-            ->on('videos')
+            ->on('users')
             ->onDelete('cascade');
+            //動画IDの外部キー制約
+            //$table->foreign('users')
+            //->references('id')
+            //->on('videos')
+            //->onDelete('cascade');
 
         });
     }
