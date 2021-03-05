@@ -25,11 +25,11 @@ class CreateVideosTable extends Migration
             ->references('id')
             ->on('users')
             ->onDelete('cascade');
-            //対象Dの外部キー制約
-            //$table->foreign('users')
-            //->references('id')
-            //->on('videos')
-            //->onDelete('cascade');
+            //対象IDの外部キー制約
+            $table->foreign('target_id')
+            ->references('id')
+            ->on('categories')
+            ->onDelete('cascade');
 
         });
     }

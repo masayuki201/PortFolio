@@ -21,9 +21,6 @@ class CreateUsersTable extends Migration
             $table->char('delete_flag', 1)->default(0)->comment('deleteフラグ');
             $table->rememberToken();
             $table->timestamps();
-
-
-
         });
     }
 
