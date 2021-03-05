@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class CategoriesTableSeeder extends Seeder
 {
@@ -26,7 +27,7 @@ class CategoriesTableSeeder extends Seeder
             ],
             [
                 'id' => '3'
-                'target_grade' => '年長 ',
+                'target_grade' => '年長',
             ],
         ]);
     }
