@@ -14,19 +14,19 @@ class CategoriesTableSeeder extends Seeder
     {
         DB::table('categories')->insert([
             [
-                'id' => '0'
+                'id' => '0',
                 'target_grade' => '年少々',
             ],
             [
-                'id' => '1'
+                'id' => '1',
                 'target_grade' => '年少',
             ],
             [
-                'id' => '2'
+                'id' => '2',
                 'target_grade' => '年中',
             ],
             [
-                'id' => '3'
+                'id' => '3',
                 'target_grade' => '年長',
             ],
         ]);
