@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class TargetsTableSeeder extends Seeder
 {
@@ -30,5 +29,6 @@ class TargetsTableSeeder extends Seeder
                 'target_grade' => '年長',
             ],
         ]);
+
     }
 }
