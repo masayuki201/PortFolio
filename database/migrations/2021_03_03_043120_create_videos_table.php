@@ -20,17 +20,19 @@ class CreateVideosTable extends Migration
             $table->unsignedInteger('target_id')->nullable()->comment('対象ID');
             $table->timestamp('regist_date')->comment('登録日');
 
-            //対象IDの外部キー制約
-            $table->foreign('target_id')
-            ->references('id')
-            ->on('targets')
-            ->onDelete('cascade');
 
             //ユーザIDの外部キー制約
             $table->foreign('user_id')
             ->references('id')
             ->on('users')
             ->onDelete('cascade');
+
+            //対象IDの外部キー制約
+            $table->foreign('target_id')
+            ->references('id')
+            ->on('targets')
+            ->onDelete('cascade');
+
         });
     }
 
