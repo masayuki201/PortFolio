@@ -25,7 +25,7 @@ Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画再生
-Route::get('/user', 'UserController@show')->name('');
+Route::get('/list', 'UserController@show')->name('');
 
 
 
@@ -44,10 +44,10 @@ Route::group(['middleware' => 'auth'], function () {
 //ログイン中 動画登録関連
 Route::group(['middleware' => 'auth'], function () {
     //動画登録画面
-    Route::get('/videos/create/{id}', 'VideosController@create')->name('video.create');
+    Route::get('/videos/create/{id}', 'VideosController@create')->name('videos.create');
     //動画登録
-    Route::post('/videos', 'VideosController@store')->name('video.store');
+    Route::post('/videos', 'VideosController@store')->name('videos.store');
     //動画削除
-    Route::delete('/videos/{id}delete', 'VideosController@destroy')->name('video.destroy');
+    Route::delete('/videos/{id}delete', 'VideosController@destroy')->name('videos.destroy');
 });
 

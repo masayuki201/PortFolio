@@ -35,7 +35,7 @@
                 <a class="nav-link text-light" href="#">ランキング</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light" href="#">みんなの動画</a>
+                <a class="nav-link text-light" href="/list">みんなの動画</a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="#">ヘルプ</a>
@@ -47,7 +47,7 @@
         @auth
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="/videos/create/{{Auth::id()}}">動画登録</a>
+                <a class="nav-link text-light" href="/videos/create">動画登録</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-light" href="/user/{{Auth::id()}}">マイページ</a>
