@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Validation\Rule;
+use App\User;
 
 
 class UserController extends Controller
