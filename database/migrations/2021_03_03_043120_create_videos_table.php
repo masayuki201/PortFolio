@@ -15,9 +15,9 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('id')->comment('動画ID');
-            $table->unsignedInteger('user_id')->unsigned()->index()->comment('ユーザID');
-            $table->string('url')->comment('URL');
-            $table->unsignedInteger('target_id')->nullable()->comment('対象ID');
+            $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
+            $table->string('url', 11)->comment('URL');
+            $table->integer('target_id')->nullable()->comment('対象ID');
             $table->timestamp('regist_date')->comment('登録日');
 
 
@@ -44,5 +44,6 @@ class CreateVideosTable extends Migration
     public function down()
     {
         Schema::dropIfExists('videos');
+
     }
 }
