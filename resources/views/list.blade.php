@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','ちるび/みんなの動画')
+@section('title','ちるび/みんなの動画ページ')
 
 @section('content')
 <div class="container">
