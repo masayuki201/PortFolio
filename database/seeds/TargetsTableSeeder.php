@@ -1,10 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\DB;
->>>>>>> develop
 
 class TargetsTableSeeder extends Seeder
 {
