@@ -24,7 +24,12 @@ Route::get('/login', 'LoginController@showLoginForm')->name('login');
 Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
-//ログイン中
+//みんなの動画再生
+Route::get('/user', 'UserController@show')->name('');
+
+
+
+//ログイン中　マイページ関連
 Route::group(['middleware' => 'auth'], function () {
     //マイページ
     Route::get('/user/{id}', 'UserController@show')->name('user.show');
@@ -35,3 +40,14 @@ Route::group(['middleware' => 'auth'], function () {
     //登録情報削除
     Route::delete('/user/{id}/delete', 'UserController@destroy')->name('user.destroy');
 });
+
+//ログイン中 動画登録関連
+Route::group(['middleware' => 'auth'], function () {
+    //動画登録画面
+    Route::get('/video/create', 'VideoController@create')->name('video.create');
+    //動画登録
+    Route::post('/video', 'VideoController@store')->name('video.store');
+    //動画削除
+    Route::delete('/video/{id}delete', 'VideoController@destroy')->name('video.destroy');
+});
+
