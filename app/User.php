@@ -22,6 +22,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    protected function videos()
+    {
+        return $this->hasMany(Video::class);
+    }
+
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
