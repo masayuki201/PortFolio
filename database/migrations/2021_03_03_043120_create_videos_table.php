@@ -15,15 +15,9 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('id')->comment('動画ID');
-<<<<<<< HEAD
             $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
             $table->string('url', 11)->comment('URL');
             $table->integer('target_id')->nullable()->comment('対象ID');
-=======
-            $table->unsignedInteger('user_id')->unsigned()->index()->comment('ユーザID');
-            $table->string('url')->comment('URL');
-            $table->unsignedInteger('target_id')->nullable()->comment('対象ID');
->>>>>>> develop
             $table->timestamp('regist_date')->comment('登録日');
 
 
@@ -32,10 +26,7 @@ class CreateVideosTable extends Migration
             ->references('id')
             ->on('users')
             ->onDelete('cascade');
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
             //対象IDの外部キー制約
             $table->foreign('target_id')
             ->references('id')
