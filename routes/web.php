@@ -25,7 +25,7 @@ Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画再生
-Route::get('/list', 'UserController@show')->name('');
+Route::get('/list', 'ListController@show')->name('list.show');
 
 
 
