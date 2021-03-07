@@ -44,10 +44,10 @@ Route::group(['middleware' => 'auth'], function () {
 //ログイン中 動画登録関連
 Route::group(['middleware' => 'auth'], function () {
     //動画登録画面
-    Route::get('/videos/create{id}', 'VideoController@create')->name('video.create');
+    Route::get('/videos/create/{id}', 'VideosController@create')->name('video.create');
     //動画登録
-    Route::post('/videos', 'VideoController@store')->name('video.store');
+    Route::post('/videos', 'VideosController@store')->name('video.store');
     //動画削除
-    Route::delete('/videos/{id}delete', 'VideoController@destroy')->name('video.destroy');
+    Route::delete('/videos/{id}delete', 'VideosController@destroy')->name('video.destroy');
 });
 
