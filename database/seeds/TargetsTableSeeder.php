@@ -29,9 +29,5 @@ class TargetsTableSeeder extends Seeder
                 'target_grade' => '年長',
             ],
         ]);
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
     }
 }
