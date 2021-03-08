@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 class ListController extends Controller
 {
-    //
+    public function show()
+    {
+        return view('list');
+    }
 }
+
+
