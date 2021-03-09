@@ -8,7 +8,11 @@ class ListController extends Controller
 {
     public function index()
     {
-        return view('list');
+        $users = User::orderBy('id','desc')->paginate(9);
+
+        return view('list', [
+            'users' => $users,
+        ]);
     }
 }
 

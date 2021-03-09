@@ -25,7 +25,7 @@ Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画一覧
-Route::get('/list', 'ListController@index')->name('list.index');
+Route::get('/list', 'UserController@index')->name('list.index');
 
 
 

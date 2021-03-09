@@ -13,7 +13,11 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('top');
+        $user = User::orderBy('id','desc')->paginate(9);
+
+        return view('welcome', [
+            'users' => $user,
+        ]);
     }
 
     //マイページ
