@@ -15,7 +15,7 @@ class UsersController extends Controller
     {
         $users = User::orderBy('id','desc')->paginate(9);
 
-        return view('/users', ['users' => $user,]);
+        return view('users', ['users' => $users,]);
     }
 
     //マイページ

@@ -8,7 +8,7 @@
         <h4>みんなの動画</h4>
     </div>
     <div class="video row mt-5 text-center">
-        @foreach ($user as $key => $user)
+        @foreach ($users as $key => $user)
 
         @php
 
@@ -30,8 +30,8 @@
                             @endif
                         </div>
                         <p>
-                            @if(isset($video->target_id))
-                                    {{ $video->target_id }}
+                            @if(isset($videos->target_id))
+                                    {{ $videos->target_id }}
                             @endif
                         </p>
                     </div>
