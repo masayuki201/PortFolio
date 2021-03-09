@@ -12,7 +12,7 @@
 
         @php
 
-        $video=$user->videos->all();
+        $video=$user->videos->last();
 
     @endphp
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
