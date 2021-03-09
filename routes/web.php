@@ -44,7 +44,7 @@ Route::group(['middleware' => 'auth'], function () {
 //ログイン中 動画登録関連
 Route::group(['middleware' => 'auth'], function () {
     //動画登録画面
-    Route::get('/videos/create/{id}', 'VideosController@create')->name('videos.create');
+    Route::get('/videos/create', 'VideosController@create')->name('videos.create');
     //動画登録
     Route::post('/videos', 'VideosController@store')->name('videos.store');
     //動画削除

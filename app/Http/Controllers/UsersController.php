@@ -9,15 +9,13 @@ use Illuminate\Validation\Rule;
 use App\User;
 
 
-class UserController extends Controller
+class UsersController extends Controller
 {
     public function index()
     {
         $user = User::orderBy('id','desc')->paginate(9);
 
-        return view('/users', [
-            'users' => $user,
-        ]);
+        return view('/users', ['users' => $user,]);
     }
 
     //マイページ
