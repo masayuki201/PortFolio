@@ -8,7 +8,7 @@
         <h4>みんなの動画</h4>
     </div>
     <div class="video row mt-5 text-center">
-        @foreach ($users as $key => $video)
+        @foreach ($user as $key => $user)
 
         @php
 
