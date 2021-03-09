@@ -14,7 +14,7 @@
 
         $video=$user->videos->last();
 
-    @endphp
+        @endphp
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
                 </div>
                 <div class="row text-center mt-3">
@@ -30,8 +30,8 @@
                             @endif
                         </div>
                         <p>
-                            @if(isset($videos->target_id))
-                                    {{ $videos->target_id }}
+                            @if(isset($video->target_id))
+                                    {{ $video->target_id }}
                             @endif
                         </p>
                     </div>
