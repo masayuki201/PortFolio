@@ -25,20 +25,20 @@ Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画一覧
-Route::get('/users', 'UserController@index')->name('users.index');
+Route::get('/users', 'UsersController@index')->name('users.index');
 
 
 
 //ログイン中　マイページ関連
 Route::group(['middleware' => 'auth'], function () {
     //マイページ
-    Route::get('/user/{id}', 'UserController@show')->name('user.show');
+    Route::get('/user/{id}', 'UsersController@show')->name('user.show');
     //登録情報修正
-    Route::get('/user/{id}/edit', 'UserController@edit')->name('user.edit');
+    Route::get('/user/{id}/edit', 'UsersController@edit')->name('user.edit');
     //登録情報更新
-    Route::post('/user/{id}', 'UserController@update')->name('user.update');
+    Route::post('/user/{id}', 'UsersController@update')->name('user.update');
     //登録情報削除
-    Route::delete('/user/{id}/delete', 'UserController@destroy')->name('user.destroy');
+    Route::delete('/user/{id}/delete', 'UsersController@destroy')->name('user.destroy');
 });
 
 //ログイン中 動画登録関連
