@@ -35,7 +35,7 @@
                 <a class="nav-link text-light" href="#">ランキング</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light" href="/list">みんなの動画</a>
+                <a class="nav-link text-light" href="/users">みんなの動画</a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="#">ヘルプ</a>
