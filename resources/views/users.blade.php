@@ -30,8 +30,8 @@
                             @endif
                         </div>
                         <p>
-                            @if(isset($video->target_id))
-                                    {{ $video->target_id }}
+                            @if(isset($video->target_grade))
+                                    {{ $video->target_grade }}
                             @endif
                         </p>
                     </div>
