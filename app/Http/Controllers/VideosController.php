@@ -38,4 +38,16 @@ class VideosController extends Controller
 
         return back();
     }
+
+    //動画削除アクション
+    public function destroy($id)
+    {
+        $video = Video::find($id);
+
+        if (\Auth::id() == $video->user_id) {
+            $video->delete();
+        }
+
+        return back();
+    }
 }
