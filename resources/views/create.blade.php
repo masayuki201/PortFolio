@@ -47,10 +47,7 @@
     </div>
 </div>
 
-<div class="mt-5">
-    <h4>登録済み動画</h4>
-</div>
-
+{{-- 登録済み動画へ --}}
 @include('videos', ['videos' => $videos])
 
 @endsection
