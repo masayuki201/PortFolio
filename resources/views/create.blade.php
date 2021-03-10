@@ -53,6 +53,6 @@
     <h4>登録済み動画</h4>
 </div>
 
-@include('videos.videos', ['videos' => $videos])
+@include('videos', ['videos' => $videos])
 
 @endsection
