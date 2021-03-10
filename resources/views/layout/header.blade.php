@@ -46,9 +46,9 @@
     {{-- 2段右寄せ ログインしている場合 --}}
         @auth
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link text-light" href="/videos/create">動画登録</a>
-            </li>
+            <div class="nav-item">
+                {!! link_to_route('videos.create','動画登録',['id'=>Auth::id()],['class'=>'nav-link text-light']) !!}
+            </div>
             <li class="nav-item">
                 <a class="nav-link text-light" href="/user/{{Auth::id()}}">マイページ</a>
             </li>
