@@ -22,6 +22,13 @@
                     {{ $video->target_id }}
                     @endif
                 </p>
+
+                @if(Auth::id() == $video->user_id)
+                {!! Form::open(['route' => ['videos.destroy', $video->id], 'method' => 'delete']) !!}
+                    {!! Form::submit('削除', ['class' => 'button btn btn-danger']) !!}
+                {!! Form::close() !!}
+                @endif
+
             </div>
         </div>
         @endforeach
