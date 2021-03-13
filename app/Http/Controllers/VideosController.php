@@ -32,8 +32,6 @@ class VideosController extends Controller
             'target_id' => 'max:10',
         ]);
 
-
-
         $request->user()->videos()->create([
             'url' => $request->url,
             'target_id' => $request->target_id,
@@ -41,7 +39,6 @@ class VideosController extends Controller
 
         return back();
     }
-
 
     //動画削除アクション
     public function destroy($id)
