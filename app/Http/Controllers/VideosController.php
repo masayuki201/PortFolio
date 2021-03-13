@@ -13,7 +13,7 @@ class VideosController extends Controller
     public function create()
     {
         $user = Auth::user();
-        $videos = $user->orderBy('id', 'desc')->paginate(9);
+        $videos = $user->videos->orderBy('id', 'desc')->paginate(9);
 
         $data=[
             'user' => $user,
@@ -35,7 +35,6 @@ class VideosController extends Controller
             'url' => $request->url,
             'target_id' => $request->target_id,
         ]);
-
         return back();
     }
 

@@ -11,6 +11,7 @@ use App\User;
 
 class UsersController extends Controller
 {
+    //みんなの動画
     public function index()
     {
         $users = User::orderBy('id','desc')->paginate(9);
