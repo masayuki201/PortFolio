@@ -22,7 +22,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    protected function videos()
+    public function videos()
     {
         return $this->hasMany(Video::class);
     }

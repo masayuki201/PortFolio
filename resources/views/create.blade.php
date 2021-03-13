@@ -19,7 +19,7 @@
             {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（複数選択可）',['class'=> 'text-success']) !!}
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check1" checked>
+                    <input class="custom-control-input" type="checkbox" id="custom-check1">
                     <label class="custom-control-label" for="custom-check1">年少々</label>
                 </div>
             </div>
@@ -37,8 +37,8 @@
             </div>
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check3">
-                    <label class="custom-control-label" for="custom-check3">年長</label>
+                    <input class="custom-control-input" type="checkbox" id="custom-check4">
+                    <label class="custom-control-label" for="custom-check4">年長</label>
                 </div>
             </div>
             {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
