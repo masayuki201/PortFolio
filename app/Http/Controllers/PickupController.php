@@ -8,12 +8,13 @@ use App\Video;
 
 class PickupController extends Controller
 {
+    //ピックアップ
     public function index()
     {
-        DB::table('videos')->inRandomOrder()->take(4)->get();
+        $pickup = Video::inRandomOrder()->take(5)->get();
 
-
-        return view('pickup');
+        return view('pickup',['pickup' => $pickup,]);
     }
+
 
 }
