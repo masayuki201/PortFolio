@@ -15,10 +15,10 @@
         @endif
         <div class="col-lg-4 mb-5">
             <div class="text-left d-inline-block">
-                ＠{{ $user->nickname }}
+                ＠{{ $pickup->nickname }}
                 <div>
-                    @if($video)
-                        <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
+                    @if($pickup)
+                        <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$pickup->url }}?controls=1&loop=1&playlist={{ $pickup->url }}" frameborder="0"></iframe>
                     @else
                         <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                     @endif
