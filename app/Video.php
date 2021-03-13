@@ -15,4 +15,10 @@ class Video extends Model
 
     public $timestamps = false;
 
+    public function pickup()
+    {
+        return $this->hasMany(Pickup::class);
+    }
+
+
 }
