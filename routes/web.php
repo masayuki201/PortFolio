@@ -27,6 +27,8 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 //みんなの動画一覧
 Route::get('/users', 'UsersController@index')->name('users.index');
 
+//ピックアアップ
+Route::get('/pickup', 'PickupController@index')->name('pickup.index');
 
 
 //ログイン中　マイページ関連
