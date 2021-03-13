@@ -6,10 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pickup extends Model
 {
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 
     protected $fillable = [
         'id',
@@ -17,5 +13,11 @@ class Pickup extends Model
         'email',
         'password',
     ];
+
+    public function video()
+    {
+        return $this->belongsTo(Video::class);
+    }
+
 
 }
