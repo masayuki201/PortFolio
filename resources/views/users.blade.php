@@ -7,32 +7,33 @@
     <div class="mt-5 mb-5">
         <h4>動画検索</h4>
     </div>
-
-<div class="form-check-inline">
-    <div class="custom-control custom-checkbox">
-        <input class="custom-control-input" type="checkbox" id="custom-check1">
-        <label class="custom-control-label" for="custom-check1">🐥 年少々</label>
+    {{--　検索機能未実装--}}
+    {{--　{!! Form::open(['route'=>' . ']) !!} --}}
+    <div class="form-check-inline">
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="custom-check1">
+            <label class="custom-control-label" for="custom-check1">🐥 年少々</label>
+        </div>
     </div>
-</div>
-<div class="form-check-inline">
-    <div class="custom-control custom-checkbox">
-        <input class="custom-control-input" type="checkbox" id="custom-check2">
-        <label class="custom-control-label" for="custom-check2">🐰 年少</label>
+    <div class="form-check-inline">
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="custom-check2">
+            <label class="custom-control-label" for="custom-check2">🐰 年少</label>
+        </div>
     </div>
-</div>
-<div class="form-check-inline">
-    <div class="custom-control custom-checkbox">
-        <input class="custom-control-input" type="checkbox" id="custom-check3">
-        <label class="custom-control-label" for="custom-check3">🐼 年中</label>
+    <div class="form-check-inline">
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="custom-check3">
+            <label class="custom-control-label" for="custom-check3">🐼 年中</label>
+        </div>
     </div>
-</div>
-<div class="form-check-inline">
-    <div class="custom-control custom-checkbox">
-        <input class="custom-control-input" type="checkbox" id="custom-check4">
-        <label class="custom-control-label" for="custom-check4">🐘 年長</label>
+    <div class="form-check-inline">
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="custom-check4">
+            <label class="custom-control-label" for="custom-check4">🐘 年長</label>
+        </div>
     </div>
-</div>
-{!! Form::submit('検索',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
+    {!! Form::submit('検索',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
 
 
     <div class="mt-5 mb-5">
@@ -46,7 +47,6 @@
         //$video=$user->videos->last();
         //$video=$user->videos;
         $video=$user;
-
 
         @endphp
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
@@ -72,7 +72,6 @@
                 </div>
         @endforeach
     </div>
-
 </div>
 
 @endsection
