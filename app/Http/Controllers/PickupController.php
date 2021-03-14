@@ -13,7 +13,7 @@ class PickupController extends Controller
     //ピックアップ
     public function index()
     {
-        $pickup = Video::inRandomOrder()->take(5)->get();
+        $pickup = Video::inRandomOrder()->take(9)->get();
 
         return view('pickup',['pickup' => $pickup,]);
     }
