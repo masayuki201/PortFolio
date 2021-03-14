@@ -43,6 +43,24 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('password'),
                 'delete_flag' => '1',
             ],
+            [
+                'nickname' => '光秀のじいじ',
+                'email'=> 'ake@ake.com',
+                'password' => bcrypt('password'),
+                'delete_flag' => '1',
+            ],
+            [
+                'nickname' => '義経のばあば',
+                'email'=> 'ashi@ashi.com',
+                'password' => bcrypt('password'),
+                'delete_flag' => '1',
+            ],
+            [
+                'nickname' => '妹子のばあば',
+                'email'=> 'ono@ono.com',
+                'password' => bcrypt('password'),
+                'delete_flag' => '1',
+            ],
         ]);
     }
 }
