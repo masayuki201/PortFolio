@@ -17,6 +17,8 @@
             {!! Form::text('url',null,['class'=>'form-control']) !!}
 
             {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（複数選択可）',['class'=> 'text-success']) !!}
+
+            {{-- チェックボックス　--}}
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
                     <input class="custom-control-input" type="checkbox" id="custom-check1">
