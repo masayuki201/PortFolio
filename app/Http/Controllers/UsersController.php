@@ -18,6 +18,7 @@ class UsersController extends Controller
         //$users = User::orderBy('id','desc')->paginate(100);
         //$users = Video::with(users)->get;
         //$users = Video::orderBy('id', 'desc')->paginate(100);
+
         $users = DB::table('videos')->get();
 
         return view('users', ['users' => $users,]);
