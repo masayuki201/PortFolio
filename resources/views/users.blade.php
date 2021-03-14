@@ -17,7 +17,6 @@
         $video=$user;
 
 
-
         @endphp
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
                 </div>
@@ -25,7 +24,7 @@
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        ＠{{ $video->user_id }}
+                        ＠{{ $video->user_id}}
                         <div>
                             @if($video)
                                 <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>

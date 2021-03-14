@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">ピックアアップ</a>
+                    <a class="nav-link text-dark" href="#">ピックアップ</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-dark" href="#">ランキング</a>

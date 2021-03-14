@@ -21,6 +21,7 @@ class UsersController extends Controller
 
         $users = DB::table('videos')->get();
 
+
         return view('users', ['users' => $users,]);
 
     }
