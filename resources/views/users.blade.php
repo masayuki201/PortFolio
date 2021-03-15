@@ -44,8 +44,6 @@
 
         @php
 
-        //$video=$user->videos->last();
-        //$video=$user->videos;
         $video=$user;
 
         @endphp
