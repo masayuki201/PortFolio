@@ -52,7 +52,7 @@ class VideosTableSeeder extends Seeder
             ],
             [
                 'user_id' =>'7',
-                'url' => 'FGOjv96y53M',
+                'url' => '86a6kVd3-1M',
                 'target_id' => '4',
                 'regist_date' => date('Y-m-d H:i:s'),
             ],
