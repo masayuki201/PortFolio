@@ -13,6 +13,12 @@ class Video extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function target()
+    {
+        return $this->belongsTo(Target::class);
+    }
+
+
     public $timestamps = false;
 
     public function pickup()

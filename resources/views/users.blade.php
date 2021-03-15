@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="mt-5 mb-5">
-        <h4>動画検索</h4>
+        <h4>おすすめ検索</h4>
     </div>
     {{--　検索機能未実装--}}
     {{--　{!! Form::open(['route'=>' . ']) !!} --}}
@@ -53,7 +53,7 @@
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        ＠{{ $video->user->nickname}}
+                        ＠{{ $video->user->nickname }}
                         <div>
                             @if($video)
                                 <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
@@ -62,7 +62,7 @@
                             @endif
                         </div>
                         <p>
-                        オススメ：{{ $video->target_id }}
+                        おすすめ：{{ $video->target['target_grade'] }}さん
                         </p>
                     </div>
                 </div>
