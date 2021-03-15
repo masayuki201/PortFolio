@@ -55,8 +55,6 @@
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        @php
-                        @endphp
                         ＠{{ $video->user->nickname}}
                         <div>
                             @if($video)
