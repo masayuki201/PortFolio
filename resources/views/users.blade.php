@@ -62,9 +62,7 @@
                             @endif
                         </div>
                         <p>
-                            @if(isset($video->target_id))
-                                    {{ $video->target_id }}
-                            @endif
+                        オススメ：{{ $video->target_id }}
                         </p>
                     </div>
                 </div>
