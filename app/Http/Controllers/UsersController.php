@@ -8,22 +8,16 @@ use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Validation\Rule;
 use App\User;
-use App\video;
+use App\Video;
 
 class UsersController extends Controller
 {
-    //みんなの動画
+    //みんなの動画表示
     public function index()
     {
-        //$users = User::orderBy('id','desc')->paginate(100);
-        //$users = Video::with(users)->get;
-        //$users = Video::orderBy('id', 'desc')->paginate(100);
-
-        $users = DB::table('videos')->get();
-
+        $users = Video::all();
 
         return view('users', ['users' => $users,]);
-
     }
 
     //マイページ

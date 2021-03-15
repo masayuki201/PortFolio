@@ -44,8 +44,6 @@
 
         @php
 
-        //$video=$user->videos->last();
-        //$video=$user->videos;
         $video=$user;
 
         @endphp
@@ -55,7 +53,7 @@
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        ＠{{ $video->user_id}}
+                        ＠{{ $video->user->nickname}}
                         <div>
                             @if($video)
                                 <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
@@ -64,9 +62,7 @@
                             @endif
                         </div>
                         <p>
-                            @if(isset($video->target_id))
-                                    {{ $video->target_id }}
-                            @endif
+                        オススメ：{{ $video->target_id }}
                         </p>
                     </div>
                 </div>
