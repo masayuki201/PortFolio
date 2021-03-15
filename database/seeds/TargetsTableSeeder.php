@@ -13,16 +13,16 @@ class TargetsTableSeeder extends Seeder
     {
         DB::table('targets')->insert([
             [
-                'target_grade' => '年少々',
+                'target_grade' => '🐥 年少々',
             ],
             [
-                'target_grade' => '年少',
+                'target_grade' => '🐰 年少',
             ],
             [
-                'target_grade' => '年中',
+                'target_grade' => '🐼 年中',
             ],
             [
-                'target_grade' => '年長',
+                'target_grade' => '🐘 年長',
             ],
         ]);
     }
