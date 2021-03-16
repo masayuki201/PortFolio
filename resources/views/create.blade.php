@@ -18,9 +18,11 @@
 
             {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（複数選択可）',['class'=> 'text-success']) !!}
 
-            {{-- 途中 配列から文字列へのエラー表示になる
-            <input type="checkbox" name="target_id[]" value="1"> <label>🐥年少々</label>
-            -- }}
+            {{-- 途中 配列から文字列へのエラー表示になる --}}
+            <input type="checkbox" name="target_id" value="1"> <label>🐥年少々</label>
+
+
+
 
             {{-- チェックボックス　--}}
             <div class="form-check-inline">
