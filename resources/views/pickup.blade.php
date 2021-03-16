@@ -28,9 +28,6 @@
                                 <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                             @endif
                         </div>
-                        <p>
-                        おすすめ：{{ $video->target['target_grade'] }}さん
-                        </p>
                     </div>
                 </div>
         @endforeach
