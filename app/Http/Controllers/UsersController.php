@@ -17,8 +17,6 @@ class UsersController extends Controller
     {
         $users = Video::all();
 
-        $targets = Video::all();
-
         return view('users', ['users' => $users,]);
     }
 
