@@ -16,37 +16,33 @@
             <div>  "v="の直後にある "<span class="text-success">”PkDfrVdCwCs”</span>" を入力</div>
             {!! Form::text('url',null,['class'=>'form-control']) !!}
 
-            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（複数選択可）',['class'=> 'text-success']) !!}
-
-            {{-- 途中 配列から文字列へのエラー表示になる
-            <input type="checkbox" name="target_id[]" value="1"> <label>🐥年少々</label>
-            -- }}
+            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（1対象のみ）',['class'=> 'text-success']) !!}
 
             {{-- チェックボックス　--}}
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check1">
-                    <label class="custom-control-label" for="custom-check1">🐥 年少々</label>
+                    <input type="checkbox" name="target_id" value="1"> <label>🐥 年少々</label>
                 </div>
             </div>
+
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check2">
-                    <label class="custom-control-label" for="custom-check2">🐰 年少</label>
+                    <input type="checkbox" name="target_id" value="2"> <label>🐰 年少</label>
                 </div>
             </div>
+
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check3">
-                    <label class="custom-control-label" for="custom-check3">🐼 年中</label>
+                    <input type="checkbox" name="target_id" value="3"> <label>🐼 年中</label>
                 </div>
             </div>
+
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check4">
-                    <label class="custom-control-label" for="custom-check4">🐘 年長</label>
+                    <input type="checkbox" name="target_id" value="4"> <label>🐘 年長</label>
                 </div>
             </div>
+
             {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
         </div>
         {!! Form::close() !!}
