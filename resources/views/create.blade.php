@@ -39,7 +39,7 @@
 
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="2"> <label>🐘 年長</label>
+                    <input type="checkbox" name="target_id" value="4"> <label>🐘 年長</label>
                 </div>
             </div>
 
