@@ -24,12 +24,14 @@ Route::get('/login', 'LoginController@showLoginForm')->name('login');
 Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
-//みんなの動画一覧
+//みんなの動画
 Route::get('/users', 'UsersController@index')->name('users.index');
 
 //ピックアアップ
 Route::get('/pickup', 'PickupController@index')->name('pickup.index');
 
+//ランキング
+Route::get('/ranking', 'RankingController@index')->name('ranking.index');
 
 //ログイン中　マイページ関連
 Route::group(['middleware' => 'auth'], function () {
