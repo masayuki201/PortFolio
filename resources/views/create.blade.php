@@ -33,17 +33,16 @@
 
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check3">
-                    <label class="custom-control-label" for="custom-check3">🐼 年中</label>
+                    <input type="checkbox" name="target_id" value="3"> <label>🐼 年中</label>
                 </div>
             </div>
 
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" id="custom-check4">
-                    <label class="custom-control-label" for="custom-check4">🐘 年長</label>
+                    <input type="checkbox" name="target_id" value="2"> <label>🐘 年長</label>
                 </div>
             </div>
+
             {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
         </div>
         {!! Form::close() !!}
