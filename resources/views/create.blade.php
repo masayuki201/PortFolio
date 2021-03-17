@@ -16,7 +16,7 @@
             <div>  "v="の直後にある "<span class="text-success">”PkDfrVdCwCs”</span>" を入力</div>
             {!! Form::text('url',null,['class'=>'form-control']) !!}
 
-            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（複数選択可）',['class'=> 'text-success']) !!}
+            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（1対象のみ）',['class'=> 'text-success']) !!}
 
             {{-- チェックボックス　--}}
             <div class="form-check-inline">
