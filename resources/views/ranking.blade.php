@@ -11,33 +11,22 @@
 
 
     <div class="video row mt-5 text-center">
-        @foreach ($users as $key => $user)
+        @foreach ($ranking as $key => $user)
+
 
         @php
-
         $video=$user;
 
-        if($video){
-
         $key_name = config('app.key_name');
-        $get_api_url = "https://www.googleapis.com/youtube/v3/videos?id=$video->url&key=$key_name&part=snippet";
+        $get_api_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$video->url&fields=items%2Fstatistics&key=$key_name;
         $json = file_get_contents($get_api_url);
-
-        if($json){
-            $getData = json_decode( $json , true);
-            if($getData['pageInfo']['totalResults']==0){
-                $video_title="※動画が未登録です";
-            }else{
-                $video_title=$getData['items']['0']['snippet']['title'];
-            }
-        }else{
-            $video_title="※一時的な情報制限中です";
+        $getData = json_decode( $json , true);
+        foreach((array)$getData['items'] as $key => $gDat){
+            $viewCount = $gDat['snippet']['viewCount'];
         }
-        }
-
-
 
         @endphp
+
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
                 </div>
                 <div class="row text-center mt-3">
@@ -54,6 +43,7 @@
                         </div>
                         <p>
                         おすすめ：{{ $video->target['target_grade'] }}さん
+                        再生回数：{{ $viewCount }}
                         </p>
                     </div>
                 </div>
