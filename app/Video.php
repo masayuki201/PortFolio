@@ -26,5 +26,11 @@ class Video extends Model
         return $this->hasMany(Pickup::class);
     }
 
+    public function ranking()
+    {
+        return $this->hasMany(ranking::class);
+    }
+
+
 
 }
