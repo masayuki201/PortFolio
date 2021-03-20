@@ -22,7 +22,7 @@
         $json = file_get_contents($get_api_url);
         $getData = json_decode( $json , true);
         foreach((array)$getData['items'] as $key => $gDat){
-            $viewCount = $gDat['snippet']['viewCount'];
+            $viewCount = $gDat['statistics']['viewCount'];
         }
 
         @endphp
