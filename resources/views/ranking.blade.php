@@ -22,7 +22,7 @@
         $json = file_get_contents($get_api_url);
         $getData = json_decode( $json , true);
         foreach((array)$getData['items'] as $key => $gDat){
-            $viewCount = $gDat['snippet']['viewCount'];
+            $viewCount = $gDat['statistics']['viewCount'];
         }
 
         @endphp
@@ -42,7 +42,7 @@
                             @endif
                         </div>
                         <p>
-                        おすすめ：{{ $video->target['target_grade'] }}さん
+                        おすすめ：{{ $video->target['target_grade'] }}さん<br>
                         再生回数：{{ $viewCount }}
                         </p>
                     </div>
