@@ -18,7 +18,7 @@
         $video=$user;
 
         $key_name = config('app.key_name');
-        $get_api_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$video->url&fields=items%2Fstatistics&key=AIzaSyBYnFqoBWFamLtvUgRqD3c37bOpnfqsgWw";
+        $get_api_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$video->url&fields=items%2Fstatistics&key=$key_name";
         $json = file_get_contents($get_api_url);
         $getData = json_decode( $json , true);
         foreach((array)$getData['items'] as $key => $gDat){
