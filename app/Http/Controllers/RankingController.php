@@ -21,8 +21,10 @@ class RankingController extends Controller
         ])
 
         //再生回数が多い順に並び替え、10動画だけ抜き取る
-        $sorted = $collection->sortByDesc('viewCount')->take(10)->get();
+        $ranking = $collection->sortByDesc('viewCount')->take(10)->get();
         */
+
+
 
 
         return view('ranking',['ranking' => $ranking,]);
