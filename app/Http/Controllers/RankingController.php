@@ -12,7 +12,14 @@ class RankingController extends Controller
     public function index()
     {
         //DBに登録されている動画を取得する
-        $ranking = Video::take(9)->get();
+        //$ranking = Video::all();
+
+        //DBに登録されている動画のid:1〜10の動画を表示
+        //$ranking = Video::take(10)->get();
+
+
+        $ranking = Video::all()->sortByDesc('viewCount')->take(10);
+
 
 
         /*
