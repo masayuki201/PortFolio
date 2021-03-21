@@ -48,6 +48,7 @@ class RankingController extends Controller
 
         // dd($viewCountRanking);
 
+        $viewCountRanking = range(1, 5);
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key+1)->first();
             $arrayVideo[] = $video;
