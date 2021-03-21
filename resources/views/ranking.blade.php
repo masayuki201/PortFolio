@@ -11,30 +11,21 @@
 
 
     <div class="video row mt-5 text-center">
-        @foreach ($ranking as $key => $user)
-
+        @foreach ($arrayVideo as $key => $user)
 
         @php
         $video=$user;
 
-        $key_name = config('app.key_name');
-        $get_api_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$video->url&fields=items%2Fstatistics&key=$key_name";
-        $json = file_get_contents($get_api_url);
-        $getData = json_decode( $json , true);
-        foreach((array)$getData['items'] as $key => $gDat){
-            $viewCount = $gDat['statistics']['viewCount'];
-        }
-
         @endphp
 
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
-                </div>
                 <div class="row text-center mt-3">
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        ＠{{ $video->user->nickname }}
+                        {{-- ＠{{ $video->user->nickname }} --}}
                         <div>
+
                             @if($video)
                                 <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
                             @else
@@ -42,8 +33,8 @@
                             @endif
                         </div>
                         <p>
-                        おすすめ：{{ $video->target['target_grade'] }}さん<br>
-                        再生回数：{{ $viewCount }}
+                        {{-- おすすめ：{{ $video->target['target_grade'] }}さん<br> --}}
+                        {{-- 再生回数：{{ $viewCount }} --}}
                         </p>
                     </div>
                 </div>
