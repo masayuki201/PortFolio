@@ -29,7 +29,6 @@ class RankingController extends Controller
         $viewCountRanking = [];
         $setVideo = Video::all();
 
-
         foreach ($setVideo as $onlyVideo){
             $video=$onlyVideo;
             $key_name = config('app.key_name');
@@ -41,20 +40,23 @@ class RankingController extends Controller
             }
         }
 
-        var_dump($viewCountRanking);
         // dd($viewCountRanking);
 
         arsort($viewCountRanking);
+
+        // var_dump($viewCountRanking);
+
         // dd($viewCountRanking);
+
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key)->first();
             $arrayVideo[] = $video;
 
         }
+
         // dd($arrayVideo);
 
         return view('ranking',['arrayVideo' => $arrayVideo, 'setVideo' => $setVideo ]);
     }
-
 
 }
