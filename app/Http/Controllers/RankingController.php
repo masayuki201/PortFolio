@@ -39,17 +39,19 @@ class RankingController extends Controller
             foreach((array)$getData['items'] as $key => $gDat){
                 $viewCountRanking[] = $gDat['statistics']['viewCount'];
             }
-
         }
-        //dd($viewCount);
+
+        var_dump($viewCountRanking);
+        // dd($viewCountRanking);
+
         arsort($viewCountRanking);
         // dd($viewCountRanking);
         foreach($viewCountRanking as $key => $video){
-            $video = Video::where('id', $key)->get();
+            $video = Video::where('id', $key)->first();
             $arrayVideo[] = $video;
 
         }
-        dd($arrayVideo);
+        // dd($arrayVideo);
 
         return view('ranking',['arrayVideo' => $arrayVideo, 'setVideo' => $setVideo ]);
     }
