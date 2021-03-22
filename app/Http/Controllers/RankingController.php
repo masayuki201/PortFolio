@@ -46,7 +46,7 @@ class RankingController extends Controller
 
         // var_dump($viewCountRanking);
 
-        dd($viewCountRanking);
+        // dd($viewCountRanking);
 
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key+1)->first();
