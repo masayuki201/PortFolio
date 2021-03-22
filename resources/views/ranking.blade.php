@@ -33,13 +33,7 @@
                             {{-- 対象学年表示 --}}
                             おすすめ：{{ $video->target['target_grade'] }}さん<br>
                             {{-- 再生回数表示 --}}
-
-                            @php
-                            // dd($video->id-1);
-                                // dd($viewCountRanking[$video->id-1]);
-                            @endphp
-
-                            再生回数：{{ $viewCountRanking[$video->id-1] }}
+                            再生回数：{{ $viewCountRanking[$video->id-1] }}回
                         </p>
                     </div>
                 </div>
