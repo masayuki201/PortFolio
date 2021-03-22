@@ -52,6 +52,12 @@ class RankingController extends Controller
             $video = Video::where('id', $key+1)->first();
             $arrayVideo[] = $video;
 
+            // $arrayVideo = 0;
+            // while($arrayVideo < 5){
+            //     echo $arrayVideo;
+            //     $arrayVideo ++;
+            // }
+
         }
 
         // dd($arrayVideo);

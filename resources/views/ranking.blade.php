@@ -9,32 +9,28 @@
     </div>
 
 
-
     <div class="video row mt-5 text-center">
         @foreach ($arrayVideo as $key => $user)
 
         @php
         $video=$user;
-
         @endphp
 
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
-                <div class="row text-center mt-3">
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
-                        {{-- ＠{{ $video->user->nickname }} --}}
+                        ＠{{ $video->user->nickname }}
                         <div>
-
                             @if($video)
-                                <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
+                            <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
                             @else
-                                <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
+                            <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                             @endif
                         </div>
                         <p>
-                        {{-- おすすめ：{{ $video->target['target_grade'] }}さん<br> --}}
-                        {{-- 再生回数：{{ $viewCount }} --}}
+                            {{-- おすすめ：{{ $video->target['target_grade'] }}さん<br> --}}
+                            {{-- 再生回数：{{ $viewCount }} --}}
                         </p>
                     </div>
                 </div>
