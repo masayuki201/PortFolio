@@ -63,7 +63,7 @@ class RankingController extends Controller
         // dd($arrayVideo);
         // dd($viewCountRanking);
 
-        return view('ranking',['arrayVideo' => $arrayVideo, 'setVideo' => $setVideo ]);
+        return view('ranking',['arrayVideo' => $arrayVideo, 'viewCountRanking' => $viewCountRanking ]);
     }
 
 }
