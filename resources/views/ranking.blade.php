@@ -13,6 +13,7 @@
 
         @php
         $video=$user;
+
         @endphp
 
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
@@ -32,7 +33,13 @@
                             {{-- 対象学年表示 --}}
                             おすすめ：{{ $video->target['target_grade'] }}さん<br>
                             {{-- 再生回数表示 --}}
-                            {{-- 再生回数：{{ $viewCount }} --}}
+
+                            @php
+                            // dd($video->id-1);
+                                // dd($viewCountRanking[$video->id-1]);
+                            @endphp
+
+                            再生回数：{{ $viewCountRanking[$video->id-1] }}
                         </p>
                     </div>
                 </div>
