@@ -9,7 +9,6 @@
     </div>
 
 
-
     <div class="video row mt-5 text-center">
         @foreach ($arrayVideo as $key => $user)
 
