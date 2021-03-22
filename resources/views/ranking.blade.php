@@ -8,7 +8,6 @@
         <h4>再生回数ランキング</h4>
     </div>
 
-
     <div class="video row mt-5 text-center">
         @foreach ($arrayVideo as $key => $user)
 
@@ -20,6 +19,7 @@
             @endif
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
+                        {{-- ニックネーム表示 --}}
                         ＠{{ $video->user->nickname }}
                         <div>
                             @if($video)
@@ -29,7 +29,9 @@
                             @endif
                         </div>
                         <p>
-                            {{-- おすすめ：{{ $video->target['target_grade'] }}さん<br> --}}
+                            {{-- 対象学年表示 --}}
+                            おすすめ：{{ $video->target['target_grade'] }}さん<br>
+                            {{-- 再生回数表示 --}}
                             {{-- 再生回数：{{ $viewCount }} --}}
                         </p>
                     </div>
