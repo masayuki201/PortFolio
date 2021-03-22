@@ -29,7 +29,7 @@
                             @endif
                         </div>
                         <p>
-                            {{-- おすすめ：{{ $video->target['target_grade'] }}さん<br> --}}
+                            おすすめ：{{ $video->target['target_grade'] }}さん<br>
                             {{-- 再生回数：{{ $viewCount }} --}}
                         </p>
                     </div>
