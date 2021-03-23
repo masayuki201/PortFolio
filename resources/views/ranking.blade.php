@@ -13,7 +13,6 @@
 
         @php
         $video=$user;
-
         @endphp
 
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)

@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="container">
-    <div class="mt-5 mb-5">
-        <h4>おすすめ検索</h4>
-    </div>
     {{--　検索機能未実装--}}
+    {{-- <div class="mt-5 mb-5">
+        <h4>おすすめ検索</h4>
+    </div> --}}
     {{--　{!! Form::open(['route'=>' . ']) !!} --}}
-    <div class="form-check-inline">
+    {{-- <div class="form-check-inline">
         <div class="custom-control custom-checkbox">
             <input class="custom-control-input" type="checkbox" id="custom-check1">
             <label class="custom-control-label" for="custom-check1">🐥 年少々</label>
@@ -33,7 +33,7 @@
             <label class="custom-control-label" for="custom-check4">🐘 年長</label>
         </div>
     </div>
-    {!! Form::submit('検索',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
+    {!! Form::submit('検索',['class'=> 'button btn btn-primary mt-5 mb-5']) !!} --}}
 
 
     <div class="mt-5 mb-5">
