@@ -12,5 +12,5 @@
 
 .body{
     background-image: url(images/s.jpg);
-    background-size: 500px 100px;
+    background-size: cover;
 }
