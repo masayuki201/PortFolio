@@ -14,7 +14,8 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/';
+    // ログイン後は、動画登録画面へ進む
+    protected $redirectTo = '/videos/create';
 
     public function __construct()
     {
