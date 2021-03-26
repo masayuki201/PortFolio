@@ -6,12 +6,8 @@
 
 @section('content')
 
-　　{{-- 背景画を入れる--}}
-
-
+{{-- "junbotron" 背景画を入れる--}}
 <div class="jumbotron">
-    {{-- <img src="/images/s.jpg"> --}}
-
     <div class="container">
         <div class="text-left text-light">
             <h2>さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h2>
