@@ -16,3 +16,9 @@
     background-position: center center;
     background-size: cover;
 }
+
+.jumbotron-extend{
+    position: relative;
+    height: 80vh;
+    min-height: 300px;
+}
