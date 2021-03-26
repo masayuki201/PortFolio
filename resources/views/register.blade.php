@@ -10,6 +10,10 @@
         </div>
     </div>
 
+    <div class="col-sm-6 offset-sm-3  mt-5 text-success">
+        <h6>※新規登録すると、動画登録ができるよ♪</h6>
+    </div>
+
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
             {!! Form::open(['route' => 'signup.post']) !!}
