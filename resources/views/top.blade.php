@@ -5,13 +5,12 @@
 @section('title','ちるび/topページ')
 
 @section('content')
-<div class="jumbotron">
-　　{{-- 写真を入れる--}}
-    写真を入れる写真を入れる写真を入れる写真を入れる写真を入れる
 
-    <div class="container">
+{{-- "junbotron" 背景画を入れる--}}
+<div class="jumbotron jumbotron-extend">
+    <div class="container-fluid jumbotron-container">
         <div class="text-left text-light">
-            <h2>さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h2>
+            <h1>さぁ みんなで作っていこう<br>子供向けの動画を共有しよう</h1>
         </div>
     </div>
 </div>
