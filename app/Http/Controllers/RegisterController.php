@@ -13,6 +13,7 @@ class RegisterController extends Controller
 {
     use RegistersUsers;
 
+    // 新規登録後は動画登録画面へ進む
     protected $redirectTo = '/videos/create';
 
     public function __construct()
