@@ -1,5 +1,3 @@
-{{-- 仮のtop画面--}}
-
 @extends('layout.app')
 
 @section('title','ちるび/topページ')
