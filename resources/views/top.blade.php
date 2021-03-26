@@ -1,5 +1,3 @@
-{{-- 仮のtop画面--}}
-
 @extends('layout.app')
 
 @section('title','ちるび/topページ')
@@ -19,7 +17,7 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
-                <a class="nav-link text-light" href="#">ピックアアップ</a>
+                <a class="nav-link text-light" href="#">ピックアップ</a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="#">ランキング</a>
