@@ -4,7 +4,7 @@
         <a class="navbar-brand text-dark" href="/"><h6>Children's<br>Videos</h6></a>
         <a class="navbar-brand text-dark" href="/"><h1>ちるび</h1></a>
 
-        {{-- 1段目右寄せメニュー ログインしていない場合 --}}
+        {{-- 1段目右寄せメニュー ログインしていない場合 新規登録・ログインボタンを表示する--}}
         @guest
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <div class="navbar-nav ml-auto">
@@ -16,7 +16,7 @@
         </div>
         @endguest
 
-        {{-- 1段目右寄せメニュー ログインしている場合 --}}
+        {{-- 1段目右寄せメニュー ログインしている場合 ニックネームを表示する--}}
         @auth
         <div class="site-description ml-auto">
             {{Auth::user()->nickname}}さん
@@ -38,7 +38,7 @@
                 <a class="nav-link text-light" href="/users">みんなの動画</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light" href="#">ヘルプ</a>
+                <a class="nav-link text-light" href="/login">動画登録</a>
             </li>
         </ul>
         </div>
