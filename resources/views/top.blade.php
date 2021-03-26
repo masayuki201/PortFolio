@@ -5,11 +5,12 @@
 @section('title','ちるび/topページ')
 
 @section('content')
-　　{{-- 写真を入れる--}}
 
-<img src="/images/s.jpg">
+　　{{-- 背景画を入れる--}}
+
+
 <div class="jumbotron">
-
+    {{-- <img src="/images/s.jpg"> --}}
 
     <div class="container">
         <div class="text-left text-light">
