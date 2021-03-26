@@ -14,7 +14,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/';
+    protected $redirectTo = '/videos/create';
 
     public function __construct()
     {

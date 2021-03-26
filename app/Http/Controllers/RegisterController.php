@@ -13,7 +13,7 @@ class RegisterController extends Controller
 {
     use RegistersUsers;
 
-    protected $redirectTo = '/';
+    protected $redirectTo = '/videos/create';
 
     public function __construct()
     {
