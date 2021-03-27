@@ -1,0 +1,34 @@
+/* 動画のサイズ */
+.movie{
+    width: 290px;
+}
+
+.movie > p{
+    height: 72px;
+}
+
+.button{
+    width: 290px;
+}
+
+/* 背景画 */
+.jumbotron{
+    background-image: url(../images/m.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 背景画のサイズ */
+.jumbotron-extend{
+    position: relative;
+    height: 80vh;
+    min-height: 300px;
+}
+
+/* 背景画上の文字 */
+.jumbotron-container{
+    position: relative;
+    top: 90%;
+    transform: translateY(-50%);
+}
