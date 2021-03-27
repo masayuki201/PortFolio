@@ -5,7 +5,7 @@
         <a class="navbar-brand text-dark" href="/"><h3>ちるび</h3></a>
 
         {{-- 右寄せメニュー --}}
-        <div class="collapse navbar-collapse flex-column" id="nav-bar">
+        <div class="collapse navbar-collapse flex-column" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
                     <a class="nav-link text-dark" href="/pickup">ピックアップ</a>
