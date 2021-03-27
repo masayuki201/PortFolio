@@ -10,6 +10,10 @@
         </div>
     </div>
 
+    <div class="col-sm-6 offset-sm-3  mt-5 text-success">
+        <h6>※新規登録すると、動画登録ができるよ♪</h6>
+    </div>
+
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
             {!! Form::open(['route' => 'signup.post']) !!}
@@ -33,7 +37,7 @@
                     {!! Form::submit('新規登録', ['class' => 'btn btn-warning btn-lg col-auto']) !!}
                 </div>
                 <div class="text-center col-sm-12 my-3">
-                    {!! link_to_route('login', 'ログインはこちらから') !!}
+                    {!! link_to_route('login', '➜ログインはこちらから') !!}
                 </div>
             {!! Form::close() !!}
         </div>
