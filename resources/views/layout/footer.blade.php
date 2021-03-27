@@ -17,7 +17,7 @@
                     <a class="nav-link text-dark" href="#">みんなの動画</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-dark" href="#">ヘルプ</a>
+                    <a class="nav-link text-dark" href="#">動画登録</a>
                 </li>
             </ul>
         </div>
