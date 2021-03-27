@@ -24,7 +24,8 @@
         @endauth
     </nav>
 
-    {{-- 2段左寄せメニュー --}}
+    {{-- 2段左寄せメニュー ログインしていない場合 --}}
+    @guest
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(30, 141, 225)">
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
@@ -32,7 +33,7 @@
                 <a class="nav-link text-light" href="/pickup">ピックアップ</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light" href="ranking">ランキング</a>
+                <a class="nav-link text-light" href="/ranking">ランキング</a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="/users">みんなの動画</a>
@@ -41,9 +42,31 @@
                 <a class="nav-link text-light" href="/login">動画登録</a>
             </li>
         </ul>
-        </div>
+    </div>
+    @endguest
 
-    {{-- 2段右寄せ ログインしている場合 --}}
+    {{-- 2段左寄せメニュー ログインしている時 --}}
+    @auth
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(30, 141, 225)">
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+                <a class="nav-link text-light" href="/pickup">ピックアップ</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link text-light" href="/ranking">ランキング</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link text-light" href="/users">みんなの動画</a>
+            </li>
+            <li class="nav-item mx-4">
+                <a class="nav-link text-light" href="/videos/create">動画登録</a>
+            </li>
+        </ul>
+        </div>
+    @endauth
+
+    {{-- 2段右寄せメニュー ログインしている場合 --}}
         @auth
         <ul class="navbar-nav ml-auto">
             {{-- <div class="nav-item"> --}}
