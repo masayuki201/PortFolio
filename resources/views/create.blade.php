@@ -16,8 +16,8 @@
             <div>  "v="の直後にある "<span class="text-success">”PkDfrVdCwCs”</span>" を入力</div>
             {!! Form::text('url',null,['class'=>'form-control']) !!}
 
-            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（1対象のみ）',['class'=> 'text-success']) !!}
-
+            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（1対象のみ）',['class'=> 'text-success mt-5']) !!}
+            <br>
             {{-- チェックボックス　--}}
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
@@ -42,8 +42,8 @@
                     <input type="checkbox" name="target_id" value="4"> <label>🐘 年長</label>
                 </div>
             </div>
-
-            {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
+            <br>
+            {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-3 mb-5']) !!}
         </div>
         {!! Form::close() !!}
     </div>
