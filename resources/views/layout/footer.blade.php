@@ -44,5 +44,4 @@
         </div>
         @endauth
     </nav>
-
 </footer>
