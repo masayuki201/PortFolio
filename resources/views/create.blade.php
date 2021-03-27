@@ -8,7 +8,7 @@
     <div class="mt-5 mb-5">
         <h4>動画登録</h4>
     </div>
-    <div class="video row mt-5 text-center">
+    <div class="video row mt-5 ">
         {!! Form::open(['route'=>'videos.store']) !!}
         <div class="form-group mt-5">
             {!! Form::label('url','①登録したいYouTube動画のURLを入力して下さい',['class'=>'text-success']) !!}
