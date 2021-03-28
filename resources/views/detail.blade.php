@@ -8,7 +8,6 @@
         <h4>マイページ</h4>
     </div>
 
-    {{-- <div class="text-center col-auto"> --}}
     <div class="row mb-3">
         <div class="col-sm-4"></div>
         <div class="col-sm-8 text-left mb-3">
@@ -24,7 +23,7 @@
         </div>
     </div>
 
-    <div class="text-center col-auto px-3 my-3">
+    <div class="text-center col-auto px-3 my-5">
         <a href="/user/{{Auth::id()}}/edit" class="btn btn-primary col-auto">修正/退会</a>
     </div>
 </div>
