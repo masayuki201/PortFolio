@@ -17,7 +17,7 @@
             {!! Form::text('url',null,['class'=>'form-control']) !!}
             {!! Form::label('comment','②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）',['class'=> 'text-success mt-5']) !!}
             <br>
-            {{-- チェックボックス　--}}
+            {{-- チェックボックス --}}
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" name="target_id" value="1"> <label>🐥 年少々</label>
@@ -32,7 +32,7 @@
 
             <div class="form-check-inline">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="3"> <label>🐼 年中</label>
+                    <input type="checkbox" name="target_id" value="3" checked> <label>🐼 年中</label>
                 </div>
             </div>
 
