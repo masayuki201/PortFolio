@@ -15,7 +15,6 @@
             <br>例）登録したいYouTube動画のURLが <span> https://www.youtube.com/watch?v=PkDfrVdCwCs なら</span>
             <div>  "v="の直後にある "<span class="text-success">”PkDfrVdCwCs”</span>" を入力してね♪<span class="text-success">（※11ケタまでだよ）</span></div>
             {!! Form::text('url',null,['class'=>'form-control']) !!}
-
             {!! Form::label('comment','②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）',['class'=> 'text-success mt-5']) !!}
             <br>
             {{-- チェックボックス　--}}
