@@ -37,8 +37,8 @@ class UsersController extends Controller
         if($id == Auth::id()){
             return view('edit',[ 'id' => $id ]);
         }
-        //フラシュメッセージをみんなの動画ページへ表示させる
-        //return redirect('/    ')->with('flash_message', '不適切なURLです。');
+        //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
+        return redirect('/users')->with('flash_message', '不適切なURLだよ。');
     }
 
     //登録情報更新
