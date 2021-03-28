@@ -32,3 +32,12 @@
     top: 90%;
     transform: translateY(-50%);
 }
+
+.my-radio {
+    position: relative;
+    display: block; /* 縦並びに */
+    margin: 0.5em 0; /* 前後のスペース */
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+}

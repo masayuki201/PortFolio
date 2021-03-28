@@ -17,30 +17,31 @@
             {!! Form::text('url',null,['class'=>'form-control']) !!}
             {!! Form::label('comment','②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）',['class'=> 'text-success mt-5']) !!}
             <br>
-            {{-- チェックボックス --}}
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="1"> <label>🐥 年少々</label>
-                </div>
+            {{-- ラジオボタン --}}
+            <div class="form-check-inline mr-3">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="1"> 🐥 年少々
+                </label>
+            </div>
+
+            <div class="form-check-inline mr-3">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="2"> 🐰 年少
+                </label>
+            </div>
+
+            <div class="form-check-inline mr-3">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="3" checked> 🐼 年中
+                </label>
             </div>
 
             <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="2"> <label>🐰 年少</label>
-                </div>
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="4"> 🐘 年長
+                </label>
             </div>
 
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="3" checked> <label>🐼 年中</label>
-                </div>
-            </div>
-
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="4"> <label>🐘 年長</label>
-                </div>
-            </div>
             <br>
             {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-3 mb-5']) !!}
         </div>
