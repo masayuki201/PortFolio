@@ -18,19 +18,19 @@
             {!! Form::label('comment','②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）',['class'=> 'text-success mt-5']) !!}
             <br>
             {{-- ラジオボタン --}}
-            <div class="form-check-inline">
+            <div class="form-check-inline mr-3">
                 <label class="my-radio">
                     <input type="radio" name="target_id" value="1"> 🐥 年少々
                 </label>
             </div>
 
-            <div class="form-check-inline">
+            <div class="form-check-inline mr-3">
                 <label class="my-radio">
                     <input type="radio" name="target_id" value="2"> 🐰 年少
                 </label>
             </div>
 
-            <div class="form-check-inline">
+            <div class="form-check-inline mr-3">
                 <label class="my-radio">
                     <input type="radio" name="target_id" value="3" checked> 🐼 年中
                 </label>
