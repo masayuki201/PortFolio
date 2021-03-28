@@ -146,14 +146,7 @@ return [
     'attributes' => [
         'email' => 'メールアドレス',
         'password' => 'パスワード',
-        'last_name' =>  '姓',
-        'first_name' => '名',
-        'zipcode' => '郵便番号',
-        'prefecture' => '都道府県',
-        'municipality' => '市町村区',
-        'address' => '番地',
-        'apartments' => 'マンション、部屋番号',
-        'phone_number' => '電話番号',
+        'nickname' =>  'ニックネーム',
     ],
 
 ];
