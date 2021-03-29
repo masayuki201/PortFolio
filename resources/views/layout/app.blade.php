@@ -15,7 +15,6 @@
 
 <body>
     @include('layout.header')
-
         @include('layout.error_messages')
         @yield('content')
 
