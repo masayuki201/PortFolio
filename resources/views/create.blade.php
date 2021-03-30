@@ -2,7 +2,6 @@
 
 @section('title','ちるび/動画登録ページ')
 
-
 @section('content')
 <div class="container">
     <div class="my-5">
