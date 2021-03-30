@@ -2,7 +2,6 @@
 
 @section('title','ちるび/動画登録ページ')
 
-
 @section('content')
 <div class="container">
     <div class="my-5">
@@ -17,6 +16,7 @@
             {!! Form::text('url',null,['class'=>'form-control']) !!}
             {!! Form::label('comment','②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）',['class'=> 'text-success mt-5']) !!}
             <br>
+
             {{-- ラジオボタン --}}
             <div class="form-check-inline mr-3">
                 <label class="my-radio">
