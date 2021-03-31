@@ -21,6 +21,7 @@
                         {{-- ニックネーム表示 --}}
                         ＠{{ $video->user->nickname }}
                         <div>
+                            {{-- 動画を表示 --}}
                             @if($video)
                                 <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
                             @else
