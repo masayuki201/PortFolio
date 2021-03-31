@@ -10,9 +10,7 @@
     <div class="row mt-5 text-center">
         @foreach ($pickup as $key => $user)
         @php
-
             $video=$user;
-
         @endphp
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
                 </div>
