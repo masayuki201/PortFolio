@@ -7,14 +7,12 @@
     <div class="mt-5 mb-5">
         <h4>再生回数ランキング</h4>
     </div>
-
     <div class="video row mt-5 text-center">
         @foreach ($arrayVideo as $key => $user)
-
         @php
-        $video=$user;
+            $video=$user;
         @endphp
-
+            {{-- 動画を横に3つずつ表示させる --}}
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
             @endif
                 <div class="col-lg-4 mb-5">
@@ -40,5 +38,4 @@
         @endforeach
     </div>
 </div>
-
 @endsection
