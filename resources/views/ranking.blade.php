@@ -12,11 +12,9 @@
         @php
             $video=$user;
         @endphp
-            {{-- 動画を横に3つずつ表示させる --}}
-            {{-- @if($loop->iteration % 3 == 1 && $loop->iteration != 1) --}}
+            {{-- 動画を縦に1つずつ表示させる --}}
                 </div>
                 <div class="row text-center mt-3">
-            {{-- @endif --}}
                 <div class="col-sm-12 mb-5">
                     <div class="video text-left d-inline-block">
                         {{-- ニックネーム表示 --}}
