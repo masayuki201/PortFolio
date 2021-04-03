@@ -12,8 +12,8 @@
         @php
             $video=$user;
         @endphp
-            {{-- 動画を縦に1つずつ表示させる --}}
-                </div>
+        {{-- 動画を縦に1つずつ表示させる --}}
+            </div>
                 <div class="row text-center mt-3">
                 <div class="col-sm-12 mb-5">
                     <div class="video text-left d-inline-block">
@@ -22,9 +22,9 @@
                         <div>
                             {{-- 動画を表示 --}}
                             @if($video)
-                            <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
+                            <iframe width="580" height="326.25" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
                             @else
-                            <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
+                            <iframe width="580" height="326.25" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                             @endif
                         </div>
                         <p>
