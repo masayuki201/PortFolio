@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-    <div class="mt-5 mb-5">
+    <div class="my-5">
         <h4>再生回数ランキング</h4>
     </div>
     <div class="video row mt-5 text-center">
@@ -12,10 +12,10 @@
         @php
             $video=$user;
         @endphp
-            {{-- 動画を横に3つずつ表示させる --}}
-            @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
-            @endif
-                <div class="col-lg-4 mb-5">
+            {{-- 動画を縦に1つずつ表示させる --}}
+                </div>
+                <div class="row text-center mt-3">
+                <div class="col-sm-12 mb-5">
                     <div class="video text-left d-inline-block">
                         {{-- ニックネーム表示 --}}
                         ＠{{ $video->user->nickname }}
