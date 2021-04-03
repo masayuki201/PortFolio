@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-    <div class="mt-5 mb-5">
+    <div class="my-5">
         <h4>再生回数ランキング</h4>
     </div>
     <div class="video row mt-5 text-center">
