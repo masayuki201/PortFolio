@@ -3,7 +3,6 @@
 @section('title','ちるび/topページ')
 
 @section('content')
-
 {{-- "junbotron" 背景画を入れる--}}
 <div class="jumbotron jumbotron-extend">
     <div class="container-fluid jumbotron-container">
