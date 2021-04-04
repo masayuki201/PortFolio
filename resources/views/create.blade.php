@@ -51,5 +51,4 @@
 
 {{-- 登録済み動画へ --}}
 @include('videos', ['videos' => $videos])
-
 @endsection
