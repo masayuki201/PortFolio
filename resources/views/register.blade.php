@@ -8,6 +8,8 @@
             <h4>新規登録</h4>
         </div>
     </div>
+
+        {{-- ※注意書き表示 --}}
     <div class="col-sm-6 offset-sm-3  mt-5 text-success">
         <h6>※新規登録すると、動画登録ができるよ♪</h6>
     </div>
