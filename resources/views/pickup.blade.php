@@ -31,7 +31,7 @@
                         </div>
                         <p>
                             {{-- 対象学年表示 --}}
-                        おすすめ：{{ $video->target['target_grade'] }}さん
+                            おすすめ：{{ $video->target['target_grade'] }}さん
                         </p>
                     </div>
                 </div>
