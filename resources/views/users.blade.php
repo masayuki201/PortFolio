@@ -35,17 +35,13 @@
     </div>
     {!! Form::submit('検索',['class'=> 'button btn btn-primary mt-5 mb-5']) !!} --}}
 
-
     <div class="mt-5 mb-5">
         <h4>みんなの動画</h4>
     </div>
     <div class="video row mt-5 text-center">
         @foreach ($users as $key => $user)
-
         @php
-
-        $video=$user;
-
+            $video=$user;
         @endphp
             {{-- 動画を横に3つずつ表示させる --}}
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
@@ -73,5 +69,4 @@
         @endforeach
     </div>
 </div>
-
 @endsection
