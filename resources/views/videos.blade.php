@@ -4,11 +4,8 @@
     </div>
     <div class="video row mt-5 text-center">
         @foreach ($videos as $key => $user)
-
         @php
-
-        $video=$user;
-
+            $video=$user;
         @endphp
             {{-- 動画を横に3つずつ表示させる --}}
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
@@ -28,20 +25,18 @@
                             @endif
                         </div>
                         <p>
-                        {{-- 対象学年表示 --}}
-                        おすすめ：{{ $video->target['target_grade'] }}さん
+                            {{-- 対象学年表示 --}}
+                            おすすめ：{{ $video->target['target_grade'] }}さん
                         </p>
 
-                        {{-- 登録動画 削除ボタン --}}
+                        {{-- 登録動画/削除ボタン --}}
                         @if(Auth::id() == $video->user_id)
-                        {!! Form::open(['route' => ['videos.destroy', $video->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('削除', ['class' => 'button btn btn-danger']) !!}
-                        {!! Form::close() !!}
+                            {!! Form::open(['route' => ['videos.destroy', $video->id], 'method' => 'delete']) !!}
+                            {!! Form::submit('削除', ['class' => 'button btn btn-danger']) !!}
+                            {!! Form::close() !!}
                         @endif
-
                     </div>
                 </div>
         @endforeach
     </div>
 </div>
-
