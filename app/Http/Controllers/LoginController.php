@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
@@ -42,5 +41,4 @@ class LoginController extends Controller
     {
         return view('login');
     }
-
 }
