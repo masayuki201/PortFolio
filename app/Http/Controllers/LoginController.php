@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\User;
+use App\MUser;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
 
 class LoginController extends Controller
 {
@@ -17,11 +15,13 @@ class LoginController extends Controller
     // ログイン後は、動画登録画面へ進む
     protected $redirectTo = '/videos/create';
 
+    // この処理を行うのは必ずguestでなければならない（logoutを除いて）
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
     }
 
+    // ログイン時のバリデーション
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -38,9 +38,9 @@ class LoginController extends Controller
         ]);
     }
 
+    // login.blade.phpを表示させる
     public function showLoginForm()
     {
         return view('login');
     }
-
 }
