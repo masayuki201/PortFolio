@@ -16,6 +16,7 @@ class LoginController extends Controller
     // ログイン後は、動画登録画面へ進む
     protected $redirectTo = '/videos/create';
 
+    // この処理を行うのは必ずguestでなければならない（logoutを除いて）
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
@@ -38,6 +39,7 @@ class LoginController extends Controller
         ]);
     }
 
+    // login.blade.phpを表示させる
     public function showLoginForm()
     {
         return view('login');
