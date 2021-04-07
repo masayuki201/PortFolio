@@ -21,6 +21,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    // ログイン時のバリデーション
     protected function validator(array $data)
     {
         return Validator::make($data, [
