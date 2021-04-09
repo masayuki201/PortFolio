@@ -19,6 +19,4 @@ class PickupController extends Controller
         // pickup.blade.phpを表示させる
         return view('pickup',['pickup' => $pickup,]);
     }
-
-
 }
