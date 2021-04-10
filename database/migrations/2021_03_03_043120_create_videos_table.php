@@ -15,9 +15,9 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('id')->comment('動画ID');
-            $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
-            $table->string('url')->comment('URL');
-            $table->integer('target_id')->unsigned()->comment('対象ID');
+            $table->integer('user_id')->index()->comment('ユーザID');
+            $table->string('url', 11)->comment('URL');
+            $table->integer('target_id')->comment('対象ID');
             $table->timestamps();
 
             //ユーザIDの外部キー制約
