@@ -18,13 +18,16 @@
                 <div class="col-sm-12 mb-5">
                     <div class="video text-left d-inline-block">
                         {{-- ニックネーム表示 --}}
+                        {{-- @php --}}
+                            {{-- dd($user) --}}
+                        {{-- @endphp --}}
                         ＠{{ $video->user->nickname }}
                         <div>
                             {{-- 動画を表示 --}}
                             @if($video)
-                            <iframe width="580" height="326.25" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
+                                <iframe width="580" height="326.25" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
                             @else
-                            <iframe width="580" height="326.25" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
+                                <iframe width="580" height="326.25" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                             @endif
                         </div>
                         <p>
