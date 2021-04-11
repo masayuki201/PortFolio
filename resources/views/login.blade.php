@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="text-center my-5">
-        <h4>1ログイン</h4>
+        <h4>ログイン</h4>
     </div>
 
     <div class="col-sm-6 offset-sm-3 text-success">
