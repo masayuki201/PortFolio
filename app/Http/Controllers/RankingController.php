@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Video;
 
@@ -11,24 +10,11 @@ class RankingController extends Controller
     //ランキング
     public function index()
     {
-        //DBに登録されている動画を取得する
-        //$ranking = Video::all();
-
-        //DBに登録されている動画のid:1〜10の動画を表示
-        //$ranking = Video::take(10)->get();
-
-        /*
-        $collection = collect([
-            ['video_id' => '1', 'viewCount' => ],
-            ])
-
-        //再生回数が多い順に並び替え、10動画だけ抜き取る
-        $ranking = $collection->sortByDesc('viewCount')->take(10)->get();
-        */
-
+        // 全ての登録済み動画を「$setVideo」とする
         $viewCountRanking = [];
         $setVideo = Video::all();
 
+        // YouTube APIを使用し、再生回数を取得する
         foreach ($setVideo as $onlyVideo){
             $video=$onlyVideo;
             $key_name = config('app.key_name');
@@ -40,30 +26,16 @@ class RankingController extends Controller
             }
         }
 
-        // dd($viewCountRanking);
-
+        // 再生回数の多い順（降順）に並び替える
         arsort($viewCountRanking);
 
-        // var_dump($viewCountRanking);
-
-        // dd($viewCountRanking);
-
+        // 再生回数とその$videoをくっつける
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key+1)->first();
             $arrayVideo[] = $video;
-
-            // $arrayVideo = 0;
-            // while($arrayVideo < 5){
-            //     echo $arrayVideo;
-            //     $arrayVideo ++;
-            // }
-
         }
 
-        // dd($arrayVideo);
-        // dd($viewCountRanking);
-
+        // ranking.blade.phpを表示させる($arrayVideo,$viewCountRankingを持っていく)
         return view('ranking',['arrayVideo' => $arrayVideo, 'viewCountRanking' => $viewCountRanking ]);
     }
-
 }
