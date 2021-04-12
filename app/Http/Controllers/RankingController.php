@@ -33,12 +33,9 @@ class RankingController extends Controller
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key+1)->first();
             $arrayVideo[] = $video;
-
-
         }
 
         // ranking.blade.phpを表示させる($arrayVideo,$viewCountRankingを持っていく)
         return view('ranking',['arrayVideo' => $arrayVideo, 'viewCountRanking' => $viewCountRanking ]);
     }
-
 }
