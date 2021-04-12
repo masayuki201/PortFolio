@@ -11,17 +11,6 @@ class RankingController extends Controller
     //ランキング
     public function index()
     {
-        //$ranking = Video::all();
-
-        //$ranking = Video::take(10)->get();
-
-        /*
-        $collection = collect([
-            ['video_id' => '1', 'viewCount' => ],
-            ])
-
-        $ranking = $collection->sortByDesc('viewCount')->take(10)->get();
-        */
 
         $viewCountRanking = [];
         $setVideo = Video::all();
@@ -37,28 +26,17 @@ class RankingController extends Controller
             }
         }
 
-        // dd($viewCountRanking);
 
         arsort($viewCountRanking);
 
-        // var_dump($viewCountRanking);
-
-        // dd($viewCountRanking);
 
         foreach($viewCountRanking as $key => $video){
             $video = Video::where('id', $key+1)->first();
             $arrayVideo[] = $video;
 
-            // $arrayVideo = 0;
-            // while($arrayVideo < 5){
-            //     echo $arrayVideo;
-            //     $arrayVideo ++;
-            // }
 
         }
 
-        // dd($arrayVideo);
-        // dd($viewCountRanking);
 
         return view('ranking',['arrayVideo' => $arrayVideo, 'viewCountRanking' => $viewCountRanking ]);
     }
