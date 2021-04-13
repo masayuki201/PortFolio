@@ -45,5 +45,4 @@ class RegisterController extends Controller
     {
         return view('register');
     }
-
 }
