@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Validation\Rule;
-use App\User;
 use App\Video;
 
 class UsersController extends Controller
@@ -28,7 +26,6 @@ class UsersController extends Controller
         }
         //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
         return redirect('/users')->with('flash_message', '不適切なURLだよ。');
-
     }
 
     //登録情報修正の表示
