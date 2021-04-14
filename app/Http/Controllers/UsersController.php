@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Validation\Rule;
-use App\User;
 use App\Video;
 
 class UsersController extends Controller
@@ -16,11 +14,11 @@ class UsersController extends Controller
     public function index()
     {
         $users = Video::all();
-
+    // Users.blade.phpを表示させる
         return view('users', ['users' => $users,]);
     }
 
-    //マイページ
+    //マイページの表示
     public function show($id)
     {
         if($id == Auth::id()){
@@ -28,10 +26,9 @@ class UsersController extends Controller
         }
         //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
         return redirect('/users')->with('flash_message', '不適切なURLだよ。');
-
     }
 
-    //登録情報修正
+    //登録情報修正の表示
     public function edit($id)
     {
         if($id == Auth::id()){
@@ -44,6 +41,7 @@ class UsersController extends Controller
     //登録情報更新
     public function update(Request $request)
     {
+        // 登録情報更新の際のバリデーション
         $request->validate([
             'nickname' => ['required', 'string', 'max:16'],
             'email' => ['required', 'string', 'email', 'max:128', Rule::unique('users')->ignore(Auth::id())],
