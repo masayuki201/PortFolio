@@ -15,5 +15,4 @@ class Target extends Model
     }
 
     public $timestamps = false;
-
 }
