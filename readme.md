@@ -101,6 +101,9 @@ ER図添付
 
 - Docker/Docker-compose
 
+- YouTube Data API
+
+
 <br>
 
 図を貼る!
