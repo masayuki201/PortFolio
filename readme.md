@@ -1,4 +1,4 @@
-# Children's Videos　　通称；「ちるび」
+# Children's Videos　　通称:「ちるび」
 
 ### お子様向けのYouTube動画の共有サイトです。
 
@@ -6,8 +6,7 @@
 
 <br>
 
-
-写真貼る！
+![image](https://user-images.githubusercontent.com/74889837/115138364-a75e1000-a066-11eb-944a-72184366cb01.png)
 
 <br>
 
@@ -75,11 +74,17 @@
 - ランキング機能
 - 検索機能（実装中）
 
+gifを貼る
+
+
 <br>
 
 # データベース設計
 
-ER図添付
+<br>
+
+![image](https://user-images.githubusercontent.com/74889837/115138728-d2496380-a068-11eb-937e-ecf4bdd0f783.png)
+
 
 <br>
 
@@ -106,7 +111,8 @@ ER図添付
 
 <br>
 
-図を貼る!
+![image](https://user-images.githubusercontent.com/74889837/115140716-a5e71480-a073-11eb-811c-114f46d4adce.png)
+
 
 <br>
 
