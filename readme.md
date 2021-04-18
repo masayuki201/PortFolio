@@ -85,11 +85,11 @@ ER図添付
 
 # 使用技術
 
-- php
+- php 7.3.11
 
-- Laravel
+- Laravel 5.8.38
 
-- MySQL
+- MySQL 5.7.33
 
 - AWS
 
@@ -100,6 +100,7 @@ ER図添付
   - Route53
 
 - Docker/Docker-compose
+
 <br>
 
 図を貼る!
