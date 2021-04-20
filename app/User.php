@@ -11,6 +11,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    // users_tableの内容設定
     protected $fillable = [
         'id',
         'nickname',
