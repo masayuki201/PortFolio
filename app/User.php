@@ -23,6 +23,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    //UserモデルがVideoモデルを所有している
     public function videos()
     {
         return $this->hasMany(Video::class);
