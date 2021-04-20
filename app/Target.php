@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Target extends Model
 {
-    // target_gradeカラムの設定
+    // targets_tableの内容設定
     protected $fillable = ['target_grade'];
 
     //TargetモデルがVideoモデルを所有している
