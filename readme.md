@@ -11,13 +11,13 @@
 <br>
 
 # URL
-### http://childrens-videos.net
+### https://childrens-videos.net
 
 ### ログインされますと、動画登録ができます。
 
-### ゲストログイン メールアドレス:guest@guest.com
+### ゲストログイン メールアドレス:g@g.com
 
-### ゲストログイン パスワード:123456
+### ゲストログイン パスワード:123
 
 <br>
 
