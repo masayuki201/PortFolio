@@ -11,7 +11,7 @@
 <br>
 
 # URL
-### http://childrens-videos.net
+### https://childrens-videos.net
 
 ### ログインされますと、動画登録ができます。
 
