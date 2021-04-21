@@ -112,4 +112,4 @@ gifを貼る
 
 <br>
 
-![image](https://user-images.githubusercontent.com/74889837/115140716-a5e71480-a073-11eb-811c-114f46d4adce.png)
+![image](https://user-images.githubusercontent.com/74889837/115611280-d5707800-a324-11eb-91b5-83280944ad78.png)
