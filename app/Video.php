@@ -24,15 +24,15 @@ class Video extends Model
 
     public $timestamps = false;
 
-    public function pickup()
-    {
-        return $this->hasMany(Pickup::class);
-    }
+    // public function pickup()
+    // {
+    //     return $this->hasMany(Pickup::class);
+    // }
 
-    public function ranking()
-    {
-        return $this->hasMany(ranking::class);
-    }
+    // public function ranking()
+    // {
+    //     return $this->hasMany(ranking::class);
+    // }
 
 
 
