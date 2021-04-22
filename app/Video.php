@@ -17,6 +17,7 @@ class Video extends Model
 
     public function target()
     {
+        // Videoモデルが、Targetモデルに所属している
         return $this->belongsTo(Target::class);
     }
 
