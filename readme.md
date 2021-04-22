@@ -76,7 +76,11 @@
 - ランキング機能
 - 検索機能（実装中）
 
-gifを貼る
+![機能一覧2](https://user-images.githubusercontent.com/74889837/115682867-d63ef380-a390-11eb-88a2-d28ee6762ec4.gif)
+
+
+
+
 
 
 <br>
