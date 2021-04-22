@@ -11,6 +11,7 @@ class Video extends Model
 
     public function user()
     {
+        // Videoモデルが、Userモデルに所属している
         return $this->belongsTo(User::class);
     }
 
