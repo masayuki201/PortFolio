@@ -21,18 +21,7 @@ class Video extends Model
         return $this->belongsTo(Target::class);
     }
 
-
     public $timestamps = false;
-
-    // public function pickup()
-    // {
-    //     return $this->hasMany(Pickup::class);
-    // }
-
-    // public function ranking()
-    // {
-    //     return $this->hasMany(ranking::class);
-    // }
 
 
 
