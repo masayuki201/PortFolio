@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Video extends Model
 {
+     // videos_tableの内容設定
     protected $fillable = ['user_id','url','target_id',];
 
     public function user()
