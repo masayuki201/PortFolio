@@ -26,7 +26,7 @@
 
     {{-- 2段左寄せメニュー ログインしていない場合 --}}
     @guest
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(30, 141, 225)">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(69, 208, 225)">
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
@@ -47,7 +47,7 @@
 
     {{-- 2段左寄せメニュー ログインしている時 --}}
     @auth
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(30, 141, 225)">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(69, 208, 225)">
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
