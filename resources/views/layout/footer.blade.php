@@ -1,7 +1,7 @@
 <footer>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(245, 138, 7)">
         {{-- サイトロゴ --}}
-        <a class="navbar-brand text-dark" href="/"><h6>Children's<br>Videos</h6></a>
+        <a class="navbar-brand text-light" href="/"><h6>Children's<br>Videos</h6></a>
         <a class="navbar-brand text-dark" href="/"><h3>ちるび</h3></a>
 
         {{-- 右寄せメニュー ログインしていない時 --}}
