@@ -15,7 +15,7 @@
                     <a class="nav-link text-light" href="/ranking">ランキング</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-dark" href="/users">みんなの動画</a>
+                    <a class="nav-link text-light" href="/users">みんなの動画</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-dark" href="/login">動画登録</a>
