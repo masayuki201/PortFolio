@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse flex-column" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="/pickup">ピックアップ</a>
+                    <a class="nav-link text-light" href="/pickup">ピックアップ</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-dark" href="/ranking">ランキング</a>
