@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse flex-column" id="nav-bar">
             <div class="navbar-nav ml-auto">
                 <div class="nav-item">
-                    {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-corn col-auto']) !!}
+                    {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-green col-auto']) !!}
                     {!! link_to_route('login', 'ログイン', [], ['class' => 'btn btn-pink col-auto']) !!}
                 </div>
             </div>
