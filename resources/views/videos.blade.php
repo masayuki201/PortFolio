@@ -32,7 +32,7 @@
                         {{-- 登録動画/削除ボタン --}}
                         @if(Auth::id() == $video->user_id)
                             {!! Form::open(['route' => ['videos.destroy', $video->id], 'method' => 'delete']) !!}
-                            {!! Form::submit('削除', ['class' => 'button btn btn-danger']) !!}
+                            {!! Form::submit('削除', ['class' => 'button btn btn-pink']) !!}
                             {!! Form::close() !!}
                         @endif
                     </div>
