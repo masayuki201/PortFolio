@@ -42,7 +42,7 @@
     user-select: none;
 }
 
-/* header ログインボタンの配色 */
+/* ログインボタンの配色 */
 /* 通常のボタン色 */
 .btn-pink,
 .btn-pink.disabled, .btn-pink:disabled {
@@ -73,7 +73,7 @@
     border-color: #ee5cbf;
 }
 
-/* header 新規登録ボタンの配色 */
+/* 新規登録ボタンの配色 */
 /* 通常のボタン色 */
 .btn-green,
 .btn-green.disabled, .btn-green:disabled {
