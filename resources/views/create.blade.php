@@ -43,7 +43,7 @@
             </div>
 
             <br>
-            {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-3 mb-5']) !!}
+            {!! Form::submit('登録',['class'=> 'button btn btn-ryb mt-3 mb-5']) !!}
         </div>
         {!! Form::close() !!}
     </div>
