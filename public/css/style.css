@@ -117,22 +117,22 @@
 .btn-ryb:focus, .btn-ryb.focus,
 .btn-ryb:not(:disabled):not(.disabled):active:focus, .btn-ryb:not(:disabled):not(.disabled).active:focus,
 .show > .btn-ryb.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(45, 28, 196, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(25, 3, 226, 0.5);
 }
 
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
 .btn-ryb:hover {
     color: #fff;
-    background-color: #f32d5b;
-    border-color: #da214c;
+    background-color: #0930f7;
+    border-color: #072ad6;
 }
 
 /* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
 .btn-ryb:not(:disabled):not(.disabled):active, .btn-ryb:not(:disabled):not(.disabled).active,
 .show > .btn-ryb.dropdown-toggle {
     color: #fff;
-    background-color: #f51449;
-    border-color: #d80a3a;
+    background-color: #032bf3;
+    border-color: #0327da;
 }
 
 
