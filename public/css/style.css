@@ -106,31 +106,31 @@
 
 /* 削除ボタンの配色
 /* 通常のボタン色 */
-.btn-green,
-.btn-green.disabled, .btn-green:disabled {
+.btn-pink,
+.btn-pink.disabled, .btn-pink:disabled {
     color: #fff;
-    background-color: #419D78;
-    border-color: #419D78;
+    background-color: #f7567c;
+    border-color: #f7567c;
 }
 
 /* focusされた時の枠線の色 */
-.btn-green:focus, .btn-green.focus,
-.btn-green:not(:disabled):not(.disabled):active:focus, .btn-green:not(:disabled):not(.disabled).active:focus,
-.show > .btn-green.dropdown-toggle:focus {
+.btn-pink:focus, .btn-pink.focus,
+.btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pink.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(53, 114, 114, 0.5);
 }
 
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
-.btn-green:hover {
+.btn-pink:hover {
     color: #fff;
-    background-color: #0a915b;
-    border-color: #069b5f;
+    background-color: #f32d5b;
+    border-color: #da214c;
 }
 
 /* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
-.btn-green:not(:disabled):not(.disabled):active, .btn-green:not(:disabled):not(.disabled).active,
-.show > .btn-green.dropdown-toggle {
+.btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active,
+.show > .btn-pink.dropdown-toggle {
     color: #fff;
-    background-color: #069b5f;
-    border-color: #05ad6a;
+    background-color: #f32d5b;
+    border-color: #da214c;
 }
