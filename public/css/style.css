@@ -92,7 +92,7 @@
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
 .btn-corn:hover {
     color: #fff;
-    background-color: #ff69d9;
+    background-color: #509c7e;
     border-color: #ff62cc;
 }
 
