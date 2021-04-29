@@ -104,6 +104,36 @@
     border-color: #05ad6a;
 }
 
+/* 登録ボタンの配色
+/* 通常のボタン色 */
+.btn-pink,
+.btn-pink.disabled, .btn-pink:disabled {
+    color: #fff;
+    background-color: #f7567c;
+    border-color: #f7567c;
+}
+
+/* focusされた時の枠線の色 */
+.btn-pink:focus, .btn-pink.focus,
+.btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pink.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(197, 73, 170, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-pink:hover {
+    color: #fff;
+    background-color: #f32d5b;
+    border-color: #da214c;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active,
+.show > .btn-pink.dropdown-toggle {
+    color: #fff;
+    background-color: #f51449;
+    border-color: #d80a3a;
+}
 
 
 /* 削除ボタンの配色
