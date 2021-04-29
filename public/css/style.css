@@ -55,22 +55,22 @@
 .btn-violet:focus, .btn-violet.focus,
 .btn-violet:not(:disabled):not(.disabled):active:focus, .btn-violet:not(:disabled):not(.disabled).active:focus,
 .show > .btn-violet.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(200, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(176, 109, 224, 0.5);
 }
 
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
 .btn-violet:hover {
   color: #fff;
-  background-color: #ff69d9;
-  border-color: #ff62cc;
+  background-color: #5a5eaa;
+  border-color: #1f2472;
 }
 
 /* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
 .btn-violet:not(:disabled):not(.disabled):active, .btn-violet:not(:disabled):not(.disabled).active,
 .show > .btn-violet.dropdown-toggle {
   color: #fff;
-  background-color: #ee62cc;
-  border-color: #ee5cbf;
+  background-color: #363cad;
+  border-color: #121872;
 }
 
 /* 新規登録ボタンの配色
