@@ -10,7 +10,7 @@
             <div class="navbar-nav ml-auto">
                 <div class="nav-item">
                     {!! link_to_route('signup', '新規登録', [], ['class' => 'btn btn-green col-auto']) !!}
-                    {!! link_to_route('login', 'ログイン', [], ['class' => 'btn btn-pink col-auto']) !!}
+                    {!! link_to_route('login', 'ログイン', [], ['class' => 'btn btn-violet col-auto']) !!}
                 </div>
             </div>
         </div>
