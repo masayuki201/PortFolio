@@ -117,7 +117,7 @@
 .btn-pink:focus, .btn-pink.focus,
 .btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus,
 .show > .btn-pink.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(114, 53, 101, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(197, 73, 170, 0.5);
 }
 
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
@@ -134,3 +134,4 @@
     background-color: #f51449;
     border-color: #d80a3a;
 }
+
