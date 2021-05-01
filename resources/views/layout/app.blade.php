@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
     {{-- Font Awesome CDN読み込み --}}
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
     <title>@yield('title')</title>
 </head>
