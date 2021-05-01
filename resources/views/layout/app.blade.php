@@ -13,6 +13,7 @@
 
     {{-- Font Awesome CDN読み込み --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css">
 
     <title>@yield('title')</title>
 </head>
