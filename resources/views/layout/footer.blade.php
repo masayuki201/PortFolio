@@ -9,7 +9,10 @@
         <div class="collapse navbar-collapse flex-column" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-light" href="/pickup">ピックアップ</a>
+                    <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
+                        <i class="fa fa-map-pin faa-vertical"></i>
+                        ピックアップ
+                    </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light" href="/ranking">ランキング</a>
