@@ -24,7 +24,7 @@
     </div>
 
     <div class="text-center col-auto px-3 my-5">
-        <a href="/user/{{Auth::id()}}/edit" class="btn btn-primary col-auto">修正/退会</a>
+        <a href="/user/{{Auth::id()}}/edit" class="btn btn-ryb col-auto">修正/退会</a>
     </div>
 </div>
 @endsection
