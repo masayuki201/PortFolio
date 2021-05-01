@@ -50,7 +50,10 @@
                     </a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light" href="/users">みんなの動画</a>
+                    <a class="nav-link text-light faa-parent  animated-hover" href="/users">
+                        <i class="fa fa-smile-beam faa-tada"></i>
+                        みんなの動画
+                    </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light" href="/videos/create">動画登録</a>
