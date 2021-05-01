@@ -94,7 +94,10 @@
         @auth
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="/user/{{Auth::id()}}">マイページ</a>
+                <a class="nav-link text-light faa-parent  animated-hover" href="/user/{{Auth::id()}}">
+                    <i class="fa fa-user faa-flash"></i>
+                    マイページ
+                </a>
             </li>
             <div class="nav-item">
                 {!! link_to_route('logout', 'ログアウト', [], ['class' => 'nav-link text-light']) !!}
