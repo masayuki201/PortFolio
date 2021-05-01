@@ -25,7 +25,7 @@
     <form action="{{ route('user.destroy', [Auth::user()->id]) }}" method="post">
         @csrf
         @method('DELETE')
-            <input class="btn btn-danger" type="submit" value="退会">
+            <input class="btn btn-pink" type="submit" value="退会">
         </div>
     </form>
 </div>
