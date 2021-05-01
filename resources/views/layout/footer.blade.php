@@ -27,7 +27,10 @@
                     </a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light" href="/login">動画登録</a>
+                    <a class="nav-link text-light faa-parent  animated-hover" href="/login">
+                        <i class="fa fa-caret-square-right faa-bounce"></i>
+                        動画登録
+                    </a>
                 </li>
             </ul>
         </div>
