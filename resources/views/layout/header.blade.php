@@ -36,7 +36,10 @@
                 </a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light" href="/ranking">ランキング</a>
+                <a class="nav-link text-light faa-parent  animated-hover" href="/ranking">
+                    <i class="fa fa-flag-checkered faa-shake "></i>
+                    ランキング
+                </a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="/users">みんなの動画</a>
