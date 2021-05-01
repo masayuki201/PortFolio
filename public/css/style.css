@@ -104,7 +104,7 @@
     border-color: #05ad6a;
 }
 
-/* 登録ボタンの配色
+/* 登録ボタン・修正/退会ボタンの配色
 /* 通常のボタン色 */
 .btn-ryb,
 .btn-ryb.disabled, .btn-ryb:disabled {
@@ -136,7 +136,7 @@
 }
 
 
-/* 削除ボタンの配色
+/* 削除ボタン・退会ボタンの配色
 /* 通常のボタン色 */
 .btn-pink,
 .btn-pink.disabled, .btn-pink:disabled {
