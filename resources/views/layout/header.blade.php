@@ -30,7 +30,10 @@
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
-                <a class="nav-link text-light" href="/pickup">ピックアップ</a>
+                <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
+                    <i class="fa fa-map-pin faa-vertical"></i>
+                    ピックアップ
+                </a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="/ranking">ランキング</a>
@@ -51,7 +54,10 @@
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             <li class="nav-item mx-2">
-                <a class="nav-link text-light" href="/pickup">ピックアップ</a>
+                <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
+                    <i class="fa fa-map-pin faa-vertical"></i>
+                    ピックアップ
+                </a>
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link text-light" href="/ranking">ランキング</a>
@@ -69,9 +75,6 @@
     {{-- 2段右寄せメニュー ログインしている場合 --}}
         @auth
         <ul class="navbar-nav ml-auto">
-            {{-- <div class="nav-item"> --}}
-                {{-- {!! link_to_route('videos.create','動画登録',['id'=>Auth::id()],['class'=>'nav-link text-light']) !!} --}}
-            {{-- </div> --}}
             <li class="nav-item">
                 <a class="nav-link text-light" href="/user/{{Auth::id()}}">マイページ</a>
             </li>
