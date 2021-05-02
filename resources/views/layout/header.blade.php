@@ -62,7 +62,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(69, 208, 225)">
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-4">
                 <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
                     <i class="fa fa-map-pin faa-vertical fa-fw"></i>
                     ピックアップ
