@@ -8,27 +8,27 @@
         @guest
         <div class="collapse navbar-collapse flex-column" >
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
-                        <i class="fa fa-map-pin faa-vertical"></i>
+                        <i class="fa fa-map-pin faa-vertical fa-fw"></i>
                         ピックアップ
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/ranking">
-                        <i class="fa fa-flag-checkered faa-shake "></i>
+                        <i class="fa fa-flag-checkered faa-shake fa-fw"></i>
                         ランキング
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/users">
-                        <i class="fa fa-smile-beam faa-tada"></i>
+                        <i class="fa fa-smile-beam faa-tada fa-fw"></i>
                         みんなの動画
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/login">
-                        <i class="fa fa-caret-square-right faa-bounce"></i>
+                        <i class="fa fa-caret-square-right faa-bounce fa-fw"></i>
                         動画登録
                     </a>
                 </li>
@@ -40,27 +40,27 @@
         @auth
         <div class="collapse navbar-collapse flex-column" >
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
-                        <i class="fa fa-map-pin faa-vertical"></i>
+                        <i class="fa fa-map-pin faa-vertical fa-fw"></i>
                         ピックアップ
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/ranking">
-                        <i class="fa fa-flag-checkered faa-shake "></i>
+                        <i class="fa fa-flag-checkered faa-shake fa-fw"></i>
                         ランキング
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/users">
-                        <i class="fa fa-smile-beam faa-tada"></i>
+                        <i class="fa fa-smile-beam faa-tadafa-fw"></i>
                         みんなの動画
                     </a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/login">
-                        <i class="fa fa-caret-square-right faa-bounce"></i>
+                        <i class="fa fa-caret-square-right faa-bounce fa-fw"></i>
                         動画登録
                     </a>
                 </li>
