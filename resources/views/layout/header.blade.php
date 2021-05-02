@@ -81,7 +81,7 @@
                 </a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link text-light faa-parent  animated-hover" href="/login">
+                <a class="nav-link text-light faa-parent  animated-hover" href="/videos/create">
                     <i class="fa fa-caret-square-right faa-bounce fa-fw"></i>
                     動画登録
                 </a>
