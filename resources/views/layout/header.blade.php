@@ -99,9 +99,13 @@
                     マイページ
                 </a>
             </li>
-            <div class="nav-item">
-                {!! link_to_route('logout', 'ログアウト', [], ['class' => 'nav-link text-light']) !!}
-            </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light faa-parent  animated-hover" href="/logout">
+                    <i class="fa fa-door-open faa-ring"></i>
+                    ログアウト
+                </a>
+            </li>
         </ul>
         @endauth
     </nav>
