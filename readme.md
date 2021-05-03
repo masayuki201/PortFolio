@@ -75,7 +75,13 @@
 - 動画一覧機能
 - ピックアップ機能
 - ランキング機能
-- 検索機能（実装中）
+
+# 今後の実装予定機能
+- 検索機能
+- ランキングの順位表示
+- 管理者機能（RESTful API）
+- YuTube動画タイトル表示（YouTube API）
+- レスポンシブ化　など
 
 ![機能一覧2](https://user-images.githubusercontent.com/74889837/115682867-d63ef380-a390-11eb-88a2-d28ee6762ec4.gif)
 
