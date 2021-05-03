@@ -1,3 +1,14 @@
+body,
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
 /* 動画のサイズ */
 .movie{
     width: 290px;
@@ -166,4 +177,3 @@
     background-color: #f51449;
     border-color: #d80a3a;
 }
-
