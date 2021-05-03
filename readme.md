@@ -84,6 +84,8 @@
 ## ピックアップ機能
 ![ピックアップ](https://user-images.githubusercontent.com/74889837/116943587-d99a7f00-acae-11eb-9644-701a2cd143c6.gif)
 
+## ランキング機能
+![ランキング](https://user-images.githubusercontent.com/74889837/116945106-d9e84980-acb1-11eb-82e4-99952eb139d1.gif)
 
 
 
