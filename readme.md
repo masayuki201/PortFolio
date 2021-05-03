@@ -87,6 +87,9 @@
 ## ランキング機能
 ![ランキング](https://user-images.githubusercontent.com/74889837/116945106-d9e84980-acb1-11eb-82e4-99952eb139d1.gif)
 
+## 動画一覧機能
+![動画一覧機能](https://user-images.githubusercontent.com/74889837/116945579-005ab480-acb3-11eb-9886-6b84d659939a.gif)
+
 
 
 
