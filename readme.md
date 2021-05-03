@@ -6,7 +6,8 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/74889837/115138364-a75e1000-a066-11eb-944a-72184366cb01.png)
+![スクリーンショット 2021-05-03 9 22 48](https://user-images.githubusercontent.com/74889837/116832806-43545380-abf1-11eb-8330-895c742134a7.png)
+
 
 <br>
 
