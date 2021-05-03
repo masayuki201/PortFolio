@@ -72,7 +72,7 @@
 - ピックアップ機能
 - ランキング機能
 - 動画一覧機能
-- 動画登録機能
+- 動画登録・削除機能
 
   - 対象学年選択
 
@@ -90,6 +90,8 @@
 ## 動画一覧機能
 ![動画一覧機能](https://user-images.githubusercontent.com/74889837/116945579-005ab480-acb3-11eb-9886-6b84d659939a.gif)
 
+## 動画登録・削除機能
+![動画登録・削除機能](https://user-images.githubusercontent.com/74889837/116946060-26cd1f80-acb4-11eb-8cf4-87db30590cab.gif)
 
 
 
