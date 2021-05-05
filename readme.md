@@ -121,9 +121,11 @@
 
 # 使用技術
 
+- Laravel 5.8.38
+
 - php 7.3.11
 
-- Laravel 5.8.38
+- HTML / CSS / Bootstrap 4.5.0
 
 - MySQL 5.7.33
 
