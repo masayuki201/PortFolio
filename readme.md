@@ -93,31 +93,26 @@
 ### 動画登録・削除機能
 ![動画登録・削除機能](https://user-images.githubusercontent.com/74889837/116946060-26cd1f80-acb4-11eb-8cf4-87db30590cab.gif)
 
-
+<br>
 
 # 今後の実装予定機能
 - 検索機能
 - ランキングの順位表示
 - 管理者機能（RESTful API）
 - YuTube動画タイトル表示（YouTube API）
-- レスポンシブ化　など
-
-
-
-
-
-
+- レスポンシブ化 など
 
 <br>
 
 # データベース設計
 ![image](https://user-images.githubusercontent.com/74889837/115138728-d2496380-a068-11eb-937e-ecf4bdd0f783.png)
 
-
 <br>
 
+# 画面遷移図・定義書（一部）など
+![遷移図](https://user-images.githubusercontent.com/74889837/117101697-bf959500-adb1-11eb-8059-c509c661fae1.png)
 
-
+<br>
 
 # 使用技術
 
