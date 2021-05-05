@@ -95,7 +95,7 @@
 
 <br>
 
-### 動画登録・削除機能
+### <動画登録・削除機能>
 ![動画登録・削除機能](https://user-images.githubusercontent.com/74889837/116946060-26cd1f80-acb4-11eb-8cf4-87db30590cab.gif)
 
 <br>
