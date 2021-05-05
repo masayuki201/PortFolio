@@ -136,6 +136,9 @@
   - EC2
   - RDS
   - Route53
+  - Elastic IP
+  - IAM
+  - ACM
 
 - Docker/Docker-compose
 
