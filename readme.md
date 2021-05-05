@@ -111,13 +111,13 @@
 <br>
 
 # データベース設計
-
-<br>
-
 ![image](https://user-images.githubusercontent.com/74889837/115138728-d2496380-a068-11eb-937e-ecf4bdd0f783.png)
 
 
 <br>
+
+
+
 
 # 使用技術
 
