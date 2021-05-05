@@ -79,23 +79,24 @@
 
   - 情報修正・退会機能
 
+<br>
 
-### ピックアップ機能
+### <ピックアップ機能>
 ![ピックアップ](https://user-images.githubusercontent.com/74889837/116943587-d99a7f00-acae-11eb-9644-701a2cd143c6.gif)
 
 <br>
 
-### ランキング機能
+### <ランキング機能>
 ![ランキング](https://user-images.githubusercontent.com/74889837/116945106-d9e84980-acb1-11eb-82e4-99952eb139d1.gif)
 
 <br>
 
-### 動画一覧機能
+### <動画一覧機能>
 ![動画一覧機能](https://user-images.githubusercontent.com/74889837/116945579-005ab480-acb3-11eb-9886-6b84d659939a.gif)
 
 <br>
 
-### 動画登録・削除機能
+### <動画登録・削除機能>
 ![動画登録・削除機能](https://user-images.githubusercontent.com/74889837/116946060-26cd1f80-acb4-11eb-8cf4-87db30590cab.gif)
 
 <br>
