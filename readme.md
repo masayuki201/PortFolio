@@ -8,7 +8,6 @@
 
 ![Top画面](https://user-images.githubusercontent.com/74889837/116947099-db684080-acb6-11eb-923d-bd448fcf4ddf.png)
 
-
 <br>
 
 # URL
@@ -26,7 +25,7 @@
 
 ### <全ての方対象>
 
-登録動画の一覧ページや、ピックアップ動画ページ、再生回数ランキングページに移動して頂き、見たい動画を再生させることが出来ます。
+登録動画の一覧ページや、ピックアップページ、再生回数ランキングページに移動して頂き、見たい動画を再生させることが出来ます。
 
 <br>
 
@@ -84,38 +83,43 @@
 ### ピックアップ機能
 ![ピックアップ](https://user-images.githubusercontent.com/74889837/116943587-d99a7f00-acae-11eb-9644-701a2cd143c6.gif)
 
+<br>
+
 ### ランキング機能
 ![ランキング](https://user-images.githubusercontent.com/74889837/116945106-d9e84980-acb1-11eb-82e4-99952eb139d1.gif)
+
+<br>
 
 ### 動画一覧機能
 ![動画一覧機能](https://user-images.githubusercontent.com/74889837/116945579-005ab480-acb3-11eb-9886-6b84d659939a.gif)
 
+<br>
+
 ### 動画登録・削除機能
 ![動画登録・削除機能](https://user-images.githubusercontent.com/74889837/116946060-26cd1f80-acb4-11eb-8cf4-87db30590cab.gif)
 
-
+<br>
 
 # 今後の実装予定機能
 - 検索機能
 - ランキングの順位表示
 - 管理者機能（RESTful API）
 - YuTube動画タイトル表示（YouTube API）
-- レスポンシブ化　など
-
-
-
-
-
-
+- レスポンシブ化 など
 
 <br>
 
 # データベース設計
+![image](https://user-images.githubusercontent.com/74889837/115138728-d2496380-a068-11eb-937e-ecf4bdd0f783.png)
 
 <br>
 
-![image](https://user-images.githubusercontent.com/74889837/115138728-d2496380-a068-11eb-937e-ecf4bdd0f783.png)
+# 画面遷移図・定義書（一部）など
+![遷移図](https://user-images.githubusercontent.com/74889837/117101697-bf959500-adb1-11eb-8059-c509c661fae1.png)
 
+![遷移図2](https://user-images.githubusercontent.com/74889837/117102592-98d85e00-adb3-11eb-8833-dd5874b4cae5.png)
+
+![定義書](https://user-images.githubusercontent.com/74889837/117102225-da1c3e00-adb2-11eb-905a-96d76d39774b.png)
 
 <br>
 
@@ -129,9 +133,11 @@
 
 - MySQL 5.7.33
 
+- Docker/Docker-compose
+
+- YouTube Data API
+
 - AWS
-
-
   - VPC
   - EC2
   - RDS
@@ -140,10 +146,7 @@
   - IAM
   - ACM
 
-- Docker/Docker-compose
-
-- YouTube Data API
-
 <br>
 
 ![image](https://user-images.githubusercontent.com/74889837/115611280-d5707800-a324-11eb-91b5-83280944ad78.png)
+
