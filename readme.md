@@ -8,7 +8,6 @@
 
 ![Top画面](https://user-images.githubusercontent.com/74889837/116947099-db684080-acb6-11eb-923d-bd448fcf4ddf.png)
 
-
 <br>
 
 # URL
@@ -112,6 +111,10 @@
 # 画面遷移図・定義書（一部）など
 ![遷移図](https://user-images.githubusercontent.com/74889837/117101697-bf959500-adb1-11eb-8059-c509c661fae1.png)
 
+![遷移図2](https://user-images.githubusercontent.com/74889837/117102592-98d85e00-adb3-11eb-8833-dd5874b4cae5.png)
+
+![定義書](https://user-images.githubusercontent.com/74889837/117102225-da1c3e00-adb2-11eb-905a-96d76d39774b.png)
+
 <br>
 
 # 使用技術
@@ -125,8 +128,6 @@
 - MySQL 5.7.33
 
 - AWS
-
-
   - VPC
   - EC2
   - RDS
