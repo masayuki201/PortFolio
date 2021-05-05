@@ -85,7 +85,7 @@
 
 <br>
 
-### ランキング機能
+### <ランキング機能>
 ![ランキング](https://user-images.githubusercontent.com/74889837/116945106-d9e84980-acb1-11eb-82e4-99952eb139d1.gif)
 
 <br>
