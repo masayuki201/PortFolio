@@ -16,7 +16,7 @@ class UsersController extends Controller
             return view('detail',[ 'id' => $id ]);
         }
         //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
-        return redirect('/users')->with('flash_message', '不適切なURLだよ。');
+        return redirect('/index')->with('flash_message', '不適切なURLだよ。');
     }
 
     //登録情報修正の表示
