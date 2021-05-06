@@ -6,18 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
 use Illuminate\Validation\Rule;
-use App\Video;
 
 class UsersController extends Controller
 {
-    //みんなの動画表示
-    public function index()
-    {
-        $users = Video::all();
-    // Users.blade.phpを表示させる
-        return view('users', ['users' => $users,]);
-    }
-
     //マイページの表示
     public function show($id)
     {
@@ -25,7 +16,7 @@ class UsersController extends Controller
             return view('detail',[ 'id' => $id ]);
         }
         //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
-        return redirect('/users')->with('flash_message', '不適切なURLだよ。');
+        return redirect('/index')->with('flash_message', '不適切なURLだよ。');
     }
 
     //登録情報修正の表示
@@ -35,7 +26,7 @@ class UsersController extends Controller
             return view('edit',[ 'id' => $id ]);
         }
         //異なるIDで開こうとした際、フラシュメッセージをみんなの動画ページへ表示させる
-        return redirect('/users')->with('flash_message', '不適切なURLだよ。');
+        return redirect('/index')->with('flash_message', '不適切なURLだよ。');
     }
 
     //登録情報更新
