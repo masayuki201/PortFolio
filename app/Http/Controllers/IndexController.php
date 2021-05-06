@@ -12,6 +12,6 @@ class IndexController extends Controller
     {
         $users = Video::all();
     // Index.blade.phpを表示させる
-        return view('users', ['users' => $users,]);
+        return view('index', ['users' => $users,]);
     }
 }
