@@ -25,7 +25,7 @@ Route::post('/login', 'LoginController@login')->name('login.post');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画
-Route::get('/users', 'UsersController@index')->name('users.index');
+Route::get('/index', 'IndexController@index')->name('index.index');
 
 //ピックアアップ
 Route::get('/pickup', 'PickupController@index')->name('pickup.index');
