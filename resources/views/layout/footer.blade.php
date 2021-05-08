@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-light faa-parent  animated-hover" href="/users">
+                    <a class="nav-link text-light faa-parent  animated-hover" href="/index">
                         <i class="fa fa-smile-beam faa-tada fa-fw"></i>
                         みんなの動画
                     </a>
