@@ -15,6 +15,7 @@
         $video=$user;
 
         @endphp
+        {{-- 動画を横に3つずつ表示させる --}}
             @if($loop->iteration % 3 == 1 && $loop->iteration != 1)
                 </div>
                 <div class="row text-center mt-3">
