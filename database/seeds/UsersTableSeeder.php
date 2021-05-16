@@ -12,6 +12,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        // create_users_table.phpに下記データを挿入
         DB::table('users')->insert([
             [
                 // ユーザID:1
