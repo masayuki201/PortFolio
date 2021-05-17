@@ -25,6 +25,7 @@ class TargetsTableSeeder extends Seeder
                 'target_grade' => '🐼 年中',
             ],
             [
+                // 対象ID:4
                 'target_grade' => '🐘 年長',
             ],
         ]);
