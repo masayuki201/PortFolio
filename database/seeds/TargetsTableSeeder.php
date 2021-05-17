@@ -13,6 +13,7 @@ class TargetsTableSeeder extends Seeder
     {
         DB::table('targets')->insert([
             [
+                // 対象ID:1
                 'target_grade' => '🐥 年少々',
             ],
             [
