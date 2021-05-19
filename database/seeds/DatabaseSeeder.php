@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // callメソッドを使用して、順番に実行したいシーダクラス名を渡す
         $this->call(UsersTableSeeder::class);
         $this->call(TargetsTableSeeder::class);
         $this->call(VideosTableSeeder::class);
