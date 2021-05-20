@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        // Schemaファサードのcreateメソッドを使用し、usersテーブルを作成
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id')->comment('ユーザID');
             $table->string('nickname',16)->comment('ニックネーム');
