@@ -32,6 +32,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        // usersテーブルを削除
         Schema::dropIfExists('users');
     }
 }
