@@ -13,6 +13,7 @@ class CreateTargetsTable extends Migration
      */
     public function up()
     {
+        // Schemaファサードのcreateメソッドを使用し、targetsテーブルを作成
         Schema::create('targets', function (Blueprint $table) {
             $table->increments('id')->comment('対象ID');
             $table->string('target_grade', 10)->comment('対象学年');
