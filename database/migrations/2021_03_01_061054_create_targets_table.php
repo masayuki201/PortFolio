@@ -27,6 +27,7 @@ class CreateTargetsTable extends Migration
      */
     public function down()
     {
+        // targetsテーブルを削除
         Schema::dropIfExists('targets');
     }
 }
