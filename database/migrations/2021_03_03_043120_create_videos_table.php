@@ -13,6 +13,7 @@ class CreateVideosTable extends Migration
      */
     public function up()
     {
+        // Schemaファサードのcreateメソッドを使用し、videosテーブルを作成
         Schema::create('videos', function (Blueprint $table) {
             $table->increments('id')->comment('動画ID');
             $table->integer('user_id')->unsigned()->index()->comment('ユーザID');
