@@ -44,6 +44,7 @@ class CreateVideosTable extends Migration
      */
     public function down()
     {
+        // videosテーブルを削除
         Schema::dropIfExists('videos');
 
     }
