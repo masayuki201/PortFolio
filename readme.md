@@ -71,6 +71,9 @@
 - ピックアップ機能 （下記gif参照）
 - ランキング機能 （下記gif参照）
 - 動画一覧機能 （下記gif参照）
+
+  - 検索機能（下記gif参照）
+
 - 動画登録・削除機能 （下記gif参照）
 
   - 対象学年選択
@@ -91,8 +94,8 @@
 
 <br>
 
-### <動画一覧機能>
-![動画一覧機能](https://user-images.githubusercontent.com/74889837/116945579-005ab480-acb3-11eb-9886-6b84d659939a.gif)
+### <動画一覧・検索機能>
+![動画一覧・検索機能](https://user-images.githubusercontent.com/74889837/120968168-7b782480-c7a3-11eb-9a01-26d7eb64e8fd.gif)
 
 <br>
 
@@ -102,7 +105,6 @@
 <br>
 
 # 今後の実装予定機能
-- 検索機能
 - ランキングの順位表示
 - 管理者機能（RESTful API）
 - YuTube動画タイトル表示（YouTube API）
