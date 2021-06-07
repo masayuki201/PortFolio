@@ -105,7 +105,7 @@ class VideosTableSeeder extends Seeder
             [
                 // 動画ID:12
                 'user_id' =>'4',
-                'url' => 'KaVS4yQUK6o',
+                'url' => 'LHcTzCAtRzo',
                 'target_id' => '2',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
@@ -113,7 +113,7 @@ class VideosTableSeeder extends Seeder
             [
                 // 動画ID:13
                 'user_id' =>'5',
-                'url' => 'gOwhKcutnpc',
+                'url' => 'xvdp9jfnbEY',
                 'target_id' => '1',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
@@ -129,7 +129,7 @@ class VideosTableSeeder extends Seeder
             [
                 // 動画ID:15
                 'user_id' =>'7',
-                'url' => 'cPt926Cx_fI',
+                'url' => 'pHnP5o9GeJc',
                 'target_id' => '4',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
