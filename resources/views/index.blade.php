@@ -31,7 +31,7 @@
             {{-- 検索ボタン --}}
             <span class="input-group-btn">
                 {{ csrf_field() }}
-                <input type="submit" class="btn btn-primary ml-4" value="検索">
+                <input type="submit" class="btn btn-ryb  ml-4" value="検索">
             </span>
         </div>
     </div>
