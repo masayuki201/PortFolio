@@ -25,7 +25,7 @@ class VideosTableSeeder extends Seeder
             [
                 // 動画ID:2
                 'user_id' =>'2',
-                'url' => 'NCJZgcvh_Xs',
+                'url' => 'ZSHhBm5OgrA',
                 'target_id' => '3',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
