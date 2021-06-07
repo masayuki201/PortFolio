@@ -27,6 +27,7 @@
                 @endif
                 @endforeach
             </select>
+
             {{-- 検索ボタン --}}
             <span class="input-group-btn">
                 {{ csrf_field() }}
