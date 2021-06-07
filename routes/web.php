@@ -26,7 +26,7 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //みんなの動画
 Route::get('/index', 'IndexController@index')->name('index.index');
-
+// 動画検索
 Route::get('/index/{id}', 'IndexController@show');
 
 //ピックアアップ
