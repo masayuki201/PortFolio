@@ -1,12 +1,16 @@
 <footer>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(245, 138, 7)">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(245, 138, 7)">
         {{-- サイトロゴ --}}
         <a class="navbar-brand text-light" href="/"><h6>Children's<br>Videos</h6></a>
-        <a class="navbar-brand text-light" href="/"><h3>ちるび</h3></a>
+        <a class="navbar-brand text-light mr-auto href="/"><h3>ちるび</h3></a>
 
         {{-- 右寄せメニュー ログインしていない時 --}}
         @guest
-        <div class="collapse navbar-collapse flex-column" >
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#ft-navi" aria-controls="ft-navi" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ft-navi" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
@@ -38,7 +42,11 @@
 
         {{-- 右寄せメニュー ログインしている時--}}
         @auth
-        <div class="collapse navbar-collapse flex-column" >
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#ft-navi" aria-controls="ft-navi" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ft-navi" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-4">
                     <a class="nav-link text-light faa-parent  animated-hover" href="/pickup">
