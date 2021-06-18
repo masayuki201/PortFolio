@@ -3,14 +3,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(255, 255, 255)">
         <a class="navbar-brand text-dark" href="/"><h6>Children's<br>Videos</h6></a>
         <a class="navbar-brand text-dark mr-auto" href="/"><h1>ちるび</h1></a>
-    </nav>
 
-    {{-- 1段目右寄せメニュー ログインしている場合 ニックネームを表示する--}}
-    @auth
-    <div class="site-description ml-auto">
-        {{Auth::user()->nickname}}さん
-    </div>
-    @endauth
+        {{-- 1段目右寄せメニュー ログインしている場合 ニックネームを表示する--}}
+        @auth
+        <div class="site-description ml-auto">
+            {{Auth::user()->nickname}}さん
+        </div>
+        @endauth
+    </nav>
 
     {{-- 2段左寄せメニュー ログインしていない場合 --}}
     @guest
