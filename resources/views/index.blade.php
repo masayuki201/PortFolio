@@ -14,7 +14,7 @@
 <form action="{{ action('IndexController@index') }}" method="get" id="search">
     {{-- カテゴリの選択 --}}
     <div class="row">
-        <div class="input-group mt-4 col-md-5 offset-2">
+        <div class="input-group mt-4 col-md-6 col-xs-12">
             <label><h6>おすすめ</h6></label>
             <select type="number" name="select_target_id" class="ml-2" style=" width:50%; text-align-last:center;">
                 {{-- 画面遷移前に選択したものを初期状態でselectedとする --}}
