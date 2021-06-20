@@ -3,24 +3,24 @@
 @section('title','ちるび/マイページ')
 
 @section('content')
-<div class="container my-5">
+<div class="container  my-5">
     <div class="text-center mb-5">
         <h4>マイページ</h4>
     </div>
 
-    <div class="row mb-3">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8 text-left mb-3">
-            ユーザーID &emsp;&emsp;&emsp;:&emsp;&emsp;{{Auth::user()->id}}
-        </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8 text-left mb-3">
-            ニックネーム &emsp;&emsp;:&emsp;&emsp;{{Auth::user()->nickname}}
-        </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8 text-left mb-3">
-            メールアドレス &emsp;:&emsp;&emsp;{{Auth::user()->email}}
-        </div>
+    <div class="form-group row">
+        <label class="col-sm-6 col-form-label text-sm-right">ユーザーID &emsp;&emsp;&emsp;:</label>
+        <label class="col-sm-6 col-form-label text-sm-left">{{Auth::user()->id}}</label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-6 col-form-label text-sm-right">ニックネーム&emsp;&emsp;:</label>
+        <label class="col-sm-6 col-form-label text-sm-left">{{Auth::user()->nickname}}</label>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-6 col-form-label text-sm-right">メールアドレス &emsp;:</label>
+        <label class="col-sm-6 col-form-label text-sm-left">{{Auth::user()->email}}</label>
     </div>
 
     <div class="text-center col-auto px-3 my-5">
