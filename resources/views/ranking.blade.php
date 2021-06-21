@@ -27,7 +27,7 @@
                                 <iframe width="580" height="326.25"  src="https://www.youtube.com/embed/" frameborder="0"></iframe>
                             @endif --}}
 
-                        <div class=>
+                        <div>
                             {{-- 動画を表示 --}}
                             @if($video)
                                 <iframe width="580" height="326.25" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
