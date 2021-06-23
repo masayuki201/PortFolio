@@ -13,36 +13,38 @@
             $video=$user;
         @endphp
         {{-- 動画を縦に1つずつ表示させる --}}
+    </div>
+    <div class="row text-center mt-3">
+    <div class="col-sm-12 mb-5">
+        <div class="video text-left d-inline-block">
+            {{-- ニックネーム表示 --}}
+            ＠{{ $video->user['nickname'] }}
+
+            {{-- <div class="embed-responsive embed-responsive-16by9">
+                @if($video)
+                    <iframe class="embed-responsive-item"  src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" allowfullscreen></iframe>
+                @else
+                    <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+                @endif
             </div>
-                <div class="row text-center mt-3">
-                <div class="col-sm-12 mb-5">
-                    <div class="video text-left d-inline-block">
-                        {{-- ニックネーム表示 --}}
-                        ＠{{ $video->user['nickname'] }}
+ --}}
+            <div>
+                {{-- 動画を表示 --}}
+                @if($video)
+                    <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" allowfullscreen></iframe>
+                @else
+                    <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+                @endif
+            </div>
 
-                        {{-- <div class="embed-responsive embed-responsive-16by9"> --}}
-                            {{-- @if($video)
-                                <iframe width="580" height="326.25"  src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
-                            @else
-                                <iframe width="580" height="326.25"  src="https://www.youtube.com/embed/" frameborder="0"></iframe>
-                            @endif --}}
-
-                        <div>
-                            {{-- 動画を表示 --}}
-                            @if($video)
-                                <iframe width="580" height="326.25" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
-                            @else
-                                <iframe width="580" height="326.25" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
-                            @endif
-                        </div>
-                        <p>
-                            {{-- 対象学年表示 --}}
-                            おすすめ：{{ $video->target['target_grade'] }}さん<br>
-                            {{-- 再生回数表示 --}}
-                            再生回数：{{ $viewCountRanking[$video->id-1] }}回
-                        </p>
-                    </div>
-                </div>
+            <p>
+                {{-- 対象学年表示 --}}
+                おすすめ：{{ $video->target['target_grade'] }}さん<br>
+                {{-- 再生回数表示 --}}
+                再生回数：{{ $viewCountRanking[$video->id-1] }}回
+            </p>
+        </div>
+    </div>
         @endforeach
     </div>
 </div>
