@@ -26,7 +26,7 @@
                         </div>
                         <p>
                             {{-- 対象学年表示 --}}
-                            おすすめ：{{ $video->target['target_grade'] }}さん
+                            おすすめ：{{ $video->target['target_grade'] }}
                         </p>
 
                         {{-- 登録動画/削除ボタン --}}
