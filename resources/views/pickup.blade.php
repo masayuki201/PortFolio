@@ -20,7 +20,7 @@
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
                         {{-- ニックネーム表示 --}}
-                        ＠{{ $video->user['nickname'] }}
+                        ＠{{ $video->user['nickname'] }} さん
                         <div>
                             {{-- 動画を表示 --}}
                             @if($video)
