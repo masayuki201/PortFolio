@@ -18,7 +18,7 @@
         <div class="col-sm-12 mb-5">
             <div class="video text-left d-inline-block">
                 {{-- ニックネーム表示 --}}
-                ＠{{ $video->user['nickname'] }}
+                ＠{{ $video->user['nickname'] }} さん
 
                 <div>
                     {{-- 動画を表示 --}}
@@ -31,7 +31,7 @@
 
                 <p>
                     {{-- 対象学年表示 --}}
-                    おすすめ：{{ $video->target['target_grade'] }}さん<br>
+                    おすすめ：{{ $video->target['target_grade'] }}<br>
                     {{-- 再生回数表示 --}}
                     再生回数：{{ $viewCountRanking[$video->id-1] }}回
                 </p>
