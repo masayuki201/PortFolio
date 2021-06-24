@@ -67,7 +67,7 @@
 
     {{-- 2段左寄せメニュー ログインしている時 --}}
     @auth
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(69, 208, 225)">
+    <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: rgb(69, 208, 225)">
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-navi" aria-controls="bs-navi" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
