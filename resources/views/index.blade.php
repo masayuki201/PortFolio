@@ -58,13 +58,13 @@
                 <div class="col-lg-4 mb-5">
                     <div class="video text-left d-inline-block">
                         {{-- ニックネーム表示 --}}
-                        ＠{{ $search->user['nickname'] }}
+                        ＠{{ $search->user['nickname'] }} さん
                         <div>
                             {{-- 動画を表示 --}}
                             @if($video)
-                                <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0"></iframe>
+                                <iframe width="290" height="163.125" src="{{ 'https://www.youtube.com/embed/'.$video->url }}?controls=1&loop=1&playlist={{ $video->url }}" frameborder="0" allowfullscreen></iframe>
                             @else
-                                <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0"></iframe>
+                                <iframe width="290" height="163.125" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
                             @endif
                         </div>
                         <p>
