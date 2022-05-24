@@ -2,48 +2,49 @@
 
 @section('title','ちるび/動画登録ページ')
 
-
 @section('content')
 <div class="container">
-    <div class="mt-5 mb-5">
+    <div class="my-5">
         <h4>動画登録</h4>
     </div>
-    <div class="video row mt-5 text-center">
+    <div class="video row">
         {!! Form::open(['route'=>'videos.store']) !!}
-        <div class="form-group mt-5">
-            {!! Form::label('url','①登録したいYouTube動画のURLを入力して下さい',['class'=>'text-success']) !!}
-            <br>例）登録したいYouTube動画のURLが <span> https://www.youtube.com/watch?v=PkDfrVdCwCs なら</span>
-            <div>  "v="の直後にある "<span class="text-success">”PkDfrVdCwCs”</span>" を入力</div>
+        <div class="form-group col-md-12">
+            <span class="text-success">①登録したいYouTube動画のURLを入力してね♪</span>
+            <br>例）登録したいYouTube動画のURLが https://www.youtube.com/watch?v=PkDfrVdCwCs なら
+            <br>"v="の直後にある<span class="text-success">PkDfrVdCwCs</span>を入力してね♪<span class="text-success">（※11ケタまでだよ）</span>
             {!! Form::text('url',null,['class'=>'form-control']) !!}
-
-            {!! Form::label('comment','②登録する動画のオススメの対象を選択して下さい（1対象のみ）',['class'=> 'text-success']) !!}
-
-            {{-- チェックボックス　--}}
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="1"> <label>🐥 年少々</label>
-                </div>
+            <br>
+            <br>
+            <span class="text-success">②登録する動画のおすすめの対象を選択してね♪（※1対象のみ）</span>
+            <br>
+            {{-- ラジオボタン --}}
+            <div class="form-check-inline mr-3 col-md-4">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="1"> 🐥 年少々
+                </label>
             </div>
 
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="2"> <label>🐰 年少</label>
-                </div>
+            <div class="form-check-inline mr-3 col-md-4">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="2"> 🐰 年少
+                </label>
             </div>
 
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="3"> <label>🐼 年中</label>
-                </div>
+            <div class="form-check-inline mr-3 col-md-4">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="3" checked> 🐼 年中
+                </label>
             </div>
 
-            <div class="form-check-inline">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="target_id" value="4"> <label>🐘 年長</label>
-                </div>
+            <div class="form-check-inline col-md-4">
+                <label class="my-radio">
+                    <input type="radio" name="target_id" value="4"> 🐘 年長
+                </label>
             </div>
 
-            {!! Form::submit('登録',['class'=> 'button btn btn-primary mt-5 mb-5']) !!}
+            <br>
+            {!! Form::submit('登録',['class'=> 'button btn btn-ryb mt-3 mb-5 col-xs-12']) !!}
         </div>
         {!! Form::close() !!}
     </div>
@@ -51,5 +52,4 @@
 
 {{-- 登録済み動画へ --}}
 @include('videos', ['videos' => $videos])
-
 @endsection
