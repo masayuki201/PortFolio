@@ -11,7 +11,13 @@
 <br>
 
 # URL
-### https://childrens-videos.net
+### ~~https://childrens-videos.net~~
+###↑AWS使用料金に伴い、close
+
+### 現在は、herokuへデプロイ中↓
+### https://childrens-videos.herokuapp.com/
+
+<br>
 
 ### ログインされますと、動画登録ができます。
 
